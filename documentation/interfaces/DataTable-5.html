@@ -1,0 +1,843 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bid-buddy documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/stripe.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bid-buddy documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li>DataTable</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/products/products.component.ts</code>
+        </p>
+
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#dataRows">dataRows</a>
+                                </li>
+                                <li>
+                                        <a href="#footerRow">footerRow</a>
+                                </li>
+                                <li>
+                                        <a href="#headerRow">headerRow</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="dataRows"></a>
+                                        <span class="name"><b>dataRows</b><a href="#dataRows"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>dataRows:     <code>string[][]</code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>string[][]</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="footerRow"></a>
+                                        <span class="name"><b>footerRow</b><a href="#footerRow"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>footerRow:     <code>string[]</code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>string[]</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="headerRow"></a>
+                                        <span class="name"><b>headerRow</b><a href="#headerRow"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>headerRow:     <code>string[]</code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>string[]</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ElementRef, OnDestroy } from &#x27;@angular/core&#x27;;
+import * as firebase from &quot;firebase&quot;;
+import swal from &#x27;sweetalert2&#x27;;
+import { AdminUsers } from &quot;../models/admin.users&quot;;
+import { AdminUsersService } from &quot;../services/admin-users.service&quot;;
+import { timer } from &#x27;rxjs&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import * as $ from &#x27;jquery&#x27;;
+import &#x27;datatables.net&#x27;;
+import &#x27;datatables.net-bs4&#x27;;
+import { DateAdapter } from &#x27;@angular/material&#x27;;
+import { OverlayService } from &#x27;../overlay/overlay.module&#x27;;
+import { ProgressSpinnerComponent } from &#x27;../progress-spinner/progress-spinner.module&#x27;;
+
+import { Product, MerchantItem } from &quot;src/app/models/product&quot;;
+import { AppConfig } from &quot;src/app/services/global.service&quot;;
+import { MainCategory } from &#x27;src/app/models/main.category&#x27;;
+import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { ClipboardService } from &#x27;ngx-clipboard&#x27;
+import { Merchants } from &#x27;../models/merchant&#x27;;
+
+declare interface DataTable {
+    headerRow: string[];
+    footerRow: string[];
+    dataRows: string[][];
+}
+
+@Component({
+    selector: &#x27;app-products-cmp&#x27;,
+    templateUrl: &#x27;./products.component.html&#x27;,
+    styleUrls: [&#x27;./products.component.css&#x27;]
+})
+
+export class ProductsComponent implements OnInit, OnDestroy {
+
+    constructor(private previewProgressSpinner: OverlayService, private http: HttpClient, private clip: ClipboardService) { }
+
+    public dataTable: DataTable;
+    config &#x3D; new AppConfig()
+    data: string[][] &#x3D; []
+    products: Product[] &#x3D; []
+    main_categories: MainCategory[] &#x3D; []
+    merchants: MerchantItem[] &#x3D; []
+
+    addNewPro &#x3D; false
+    editPro &#x3D; false
+    currentProRow: Product
+
+    selectedProduct: Product
+    isDeletedView &#x3D; false
+
+    imageURLs: string[] &#x3D; []
+    ///////////////////////
+    product_image &#x3D; &#x27;./assets/img/image_placeholder.jpg&#x27;
+    product_name &#x3D; &#x27;&#x27;
+    product_price &#x3D; 0
+    product_desc &#x3D; &#x27;&#x27;
+    product_type &#x3D; &#x27;&#x27;
+    product_cat &#x3D; &#x27;&#x27;
+    product_merchant: MerchantItem[] &#x3D; []
+    product_status &#x3D; false
+    product_start_date &#x3D; &#x27;&#x27;
+    product_end_date &#x3D; &#x27;&#x27;
+    product_coupon_code &#x3D; &#x27;&#x27;
+    product_coupon_value_type &#x3D; &#x27;&#x27;
+    product_coupon_value &#x3D; 0
+    product_dynamic_link &#x3D; &#x27;&#x27;
+
+    business_owner &#x3D; &#x27;&#x27;
+    current_user_role &#x3D; &#x27;&#x27;
+    isMerchantAccount &#x3D; false
+
+    true_false_data &#x3D; [
+        { value: &#x27;false&#x27;, viewValue: &#x27;False&#x27; },
+        { value: &#x27;true&#x27;, viewValue: &#x27;True&#x27; },
+    ]
+
+    coupon_value_data &#x3D; [
+        { value: &#x27;percent&#x27;, viewValue: &#x27;Percent&#x27; },
+        { value: &#x27;amount&#x27;, viewValue: &#x27;Amount&#x27; },
+    ]
+
+    product_type_data &#x3D; [
+        { value: &#x27;free&#x27;, viewValue: &#x27;Free&#x27; },
+        { value: &#x27;split&#x27;, viewValue: &#x27;Split&#x27; },
+        { value: &#x27;sell&#x27;, viewValue: &#x27;Sell&#x27; },
+    ]
+    ///////////////////////
+
+    clearField() {
+        this.imageURLs &#x3D; []
+        this.product_image &#x3D; &#x27;./assets/img/image_placeholder.jpg&#x27;
+        this.product_name &#x3D; &#x27;&#x27;
+        this.product_price &#x3D; 0
+        this.product_desc &#x3D; &#x27;&#x27;
+        this.product_type &#x3D; &#x27;&#x27;
+        this.product_cat &#x3D; &#x27;&#x27;
+        this.product_merchant &#x3D; []
+        this.product_status &#x3D; false
+        this.product_start_date &#x3D; &#x27;&#x27;
+        this.product_end_date &#x3D; &#x27;&#x27;
+        this.product_coupon_code &#x3D; &#x27;&#x27;
+        this.product_coupon_value_type &#x3D; &#x27;&#x27;
+        this.product_coupon_value &#x3D; 0
+        this.product_dynamic_link &#x3D; &#x27;&#x27;
+    }
+
+    ngOnDestroy() {
+
+    }
+
+    getCurrentUser() {
+        const email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;users&#x27;).doc(email).get().then(u &#x3D;&gt; {
+            const user &#x3D; &lt;AdminUsers&gt;u.data()
+            if (user.role &#x3D;&#x3D; &#x27;Merchant&#x27;) {
+                this.isMerchantAccount &#x3D; true
+            }
+            this.business_owner &#x3D; user.business_owner
+            this.current_user_role &#x3D; user.role
+        })
+    }
+
+    ngOnInit() {
+        this.getCurrentUser()
+        this.getMainCategories()
+        this.getMerchants()
+        this.getProducts()
+    }
+
+    addPro() {
+        this.addNewPro &#x3D; true
+        //this.addNewCat2 &#x3D; true
+    }
+
+    cancelAddPro() {
+        this.addNewPro &#x3D; false
+        //this.addNewCat2 &#x3D; false
+        this.editPro &#x3D; false
+        this.clearField()
+    }
+
+    getProducts() {
+        this.isDeletedView &#x3D; false
+        if (this.isMerchantAccount) {
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).where(&quot;deleted&quot;, &quot;&#x3D;&#x3D;&quot;, false).where(&#x27;merchant_id&#x27;, &#x27;&#x3D;&#x3D;&#x27;, this.business_owner).onSnapshot(query &#x3D;&gt; {
+                this.data &#x3D; []
+                this.products &#x3D; []
+                var index &#x3D; 0
+                query.forEach(data &#x3D;&gt; {
+                    const pro &#x3D; &lt;Product&gt;data.data()
+                    this.products.push(pro)
+                    const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+                        return value.id &#x3D;&#x3D; pro.merchant_id
+                    })
+                    const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+                        return value.id &#x3D;&#x3D; pro.category_id
+                    })
+                    this.data.push([&#x60;${index}&#x60;, pro.pictures[0], pro.name, &#x60;₦${pro.price}&#x60;, &#x60;${getCurrentMerchant[0].value}&#x60;, &#x60;${getCurrentCategory[0].name}&#x60;, pro.deliver_type, &#x60;${pro.status}&#x60;, pro.created_date, pro.modified_date, &#x27;btn-link&#x27;, pro.dynamic_link])
+                    index &#x3D; index + 1
+                })
+                this.dataTable &#x3D; {
+                    headerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                    footerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                    dataRows: this.data
+                };
+            });
+            return
+        }
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).where(&quot;deleted&quot;, &quot;&#x3D;&#x3D;&quot;, false).onSnapshot(query &#x3D;&gt; {
+            this.data &#x3D; []
+            this.products &#x3D; []
+            var index &#x3D; 0
+            query.forEach(data &#x3D;&gt; {
+                const pro &#x3D; &lt;Product&gt;data.data()
+                this.products.push(pro)
+                const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+                    return value.id &#x3D;&#x3D; pro.merchant_id
+                })
+                const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+                    return value.id &#x3D;&#x3D; pro.category_id
+                })
+                this.data.push([&#x60;${index}&#x60;, pro.pictures[0], pro.name, &#x60;₦${pro.price}&#x60;, &#x60;${getCurrentMerchant[0].value}&#x60;, &#x60;${getCurrentCategory[0].name}&#x60;, pro.deliver_type, &#x60;${pro.status}&#x60;, pro.created_date, pro.modified_date, &#x27;btn-link&#x27;, pro.dynamic_link])
+                index &#x3D; index + 1
+            })
+            this.dataTable &#x3D; {
+                headerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                footerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                dataRows: this.data
+            };
+        });
+    }
+
+    getDeletedProducts() {
+        this.isDeletedView &#x3D; true
+        if (this.isMerchantAccount) {
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).where(&quot;deleted&quot;, &quot;&#x3D;&#x3D;&quot;, true).where(&#x27;merchant_id&#x27;, &#x27;&#x3D;&#x3D;&#x27;, this.business_owner).onSnapshot(query &#x3D;&gt; {
+                this.data &#x3D; []
+                this.products &#x3D; []
+                var index &#x3D; 0
+                query.forEach(data &#x3D;&gt; {
+                    const pro &#x3D; &lt;Product&gt;data.data()
+                    this.products.push(pro)
+                    const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+                        return value.id &#x3D;&#x3D; pro.merchant_id
+                    })
+                    const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+                        return value.id &#x3D;&#x3D; pro.category_id
+                    })
+                    this.data.push([&#x60;${index}&#x60;, pro.pictures[0], pro.name, &#x60;₦${pro.price}&#x60;, &#x60;${getCurrentMerchant[0].value}&#x60;, &#x60;${getCurrentCategory[0].name}&#x60;, &#x60;${pro.status}&#x60;, pro.created_date, pro.modified_date, &#x27;btn-link&#x27;, pro.dynamic_link])
+                    index &#x3D; index + 1
+                })
+                this.dataTable &#x3D; {
+                    headerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                    footerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                    dataRows: this.data
+                };
+            });
+            return
+        }
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).where(&quot;deleted&quot;, &quot;&#x3D;&#x3D;&quot;, true).onSnapshot(query &#x3D;&gt; {
+            this.data &#x3D; []
+            this.products &#x3D; []
+            var index &#x3D; 0
+            query.forEach(data &#x3D;&gt; {
+                const pro &#x3D; &lt;Product&gt;data.data()
+                this.products.push(pro)
+                const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+                    return value.id &#x3D;&#x3D; pro.merchant_id
+                })
+                const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+                    return value.id &#x3D;&#x3D; pro.category_id
+                })
+                this.data.push([&#x60;${index}&#x60;, pro.pictures[0], pro.name, &#x60;₦${pro.price}&#x60;, &#x60;${getCurrentMerchant[0].value}&#x60;, &#x60;${getCurrentCategory[0].name}&#x60;, &#x60;${pro.status}&#x60;, pro.created_date, pro.modified_date, &#x27;btn-link&#x27;, pro.dynamic_link])
+                index &#x3D; index + 1
+            })
+            this.dataTable &#x3D; {
+                headerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                footerRow: [&#x27;Image&#x27;, &#x27;Name&#x27;, &#x27;Price&#x27;, &#x27;Merchant Name&#x27;, &#x27;Category&#x27;, &#x27;Type&#x27;, &#x27;Status&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                dataRows: this.data
+            };
+        });
+    }
+
+    getMainCategories() {
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;main-categories&#x27;).get().then(query &#x3D;&gt; {
+            this.main_categories &#x3D; []
+            query.forEach(data &#x3D;&gt; {
+                const category &#x3D; &lt;MainCategory&gt;data.data()
+                this.main_categories.push(category)
+            })
+        });
+    }
+
+    getMerchants() {
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;merchants&#x27;).get().then(query &#x3D;&gt; {
+            this.merchants &#x3D; []
+            query.forEach(async data &#x3D;&gt; {
+                const mer &#x3D; &lt;Merchants&gt;data.data()
+                const item: MerchantItem &#x3D; {
+                    display: mer.business_name,
+                    value: mer.business_name,
+                    id: mer.id
+                }
+                this.merchants.push(item)
+            })
+        });
+    }
+
+    async getMainCategoryNameFromId(id: string) {
+        const mainData: firebase.firestore.DocumentSnapshot &#x3D; await firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;main-categories&#x27;).doc(id).get()
+        return &lt;MainCategory&gt;mainData.data()
+    }
+
+    randomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    async uploadImageToStorage(imageFile: File) {
+        const key &#x3D; firebase.database().ref().push().key
+        const upload_task &#x3D; firebase.storage().ref(&quot;product&quot;).child(&#x60;${key}.jpg&#x60;)
+        await upload_task.put(imageFile)
+        const url &#x3D; await upload_task.getDownloadURL()
+        this.imageURLs.push(&#x60;${url}&#x60;)
+    }
+
+    async productSubmitClicked() {
+        const image &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&quot;pro_images&quot;)).files
+        if (
+            this.product_name &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_price &#x3D;&#x3D; 0 ||
+            this.product_desc &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_type &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_cat &#x3D;&#x3D; &#x27;&#x27; ||
+            //this.product_merchant &#x3D;&#x3D; [] ||
+            this.product_start_date &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_end_date &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_coupon_code &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_coupon_value_type &#x3D;&#x3D; &#x27;&#x27; ||
+            this.product_coupon_value &#x3D;&#x3D; 0
+        ) {//|| this.basket_items.length &#x3D;&#x3D; 0
+            this.config.displayMessage(&quot;All fields marked with * are required&quot;, false)
+            return
+        }
+        const start &#x3D; new Date(this.product_start_date[&#x27;seconds&#x27;] * 1000)
+        const end &#x3D; new Date(this.product_end_date[&#x27;seconds&#x27;] * 1000)
+        const diff &#x3D; end.getTime() - start.getTime()
+        const dateDiff &#x3D; new Date(diff)
+        const hourDiff &#x3D; dateDiff.getHours()
+        if(diff &lt; 0){//|| hourDiff &lt; 1
+            this.config.displayMessage(&quot;Please let the difference of your start and end date be greater than 1hour&quot;, false)
+            return
+        }
+
+        this.previewProgressSpinner.open({ hasBackdrop: true }, ProgressSpinnerComponent);
+        if (!this.editPro) {//new add
+            if (this.product_image &#x3D;&#x3D; &#x27;&#x27; || image.length &#x3D;&#x3D; 0) {
+                this.config.displayMessage(&quot;Please upload an image for this product&quot;, false)
+                return
+            }
+            const key &#x3D; firebase.database().ref().push().key
+            const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+            const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+
+            for (var i &#x3D; 0; i &lt; image.length; i++) {
+                await this.uploadImageToStorage(image.item(i));
+            }
+
+            var mer_id &#x3D; &#x27;&#x27;
+            if (this.isMerchantAccount) {
+                const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+                    return value.display &#x3D;&#x3D; this.product_merchant[0].value
+                })
+                mer_id &#x3D; getCurrentMerchant[0].id
+            }
+            const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+                return value.name &#x3D;&#x3D; this.product_cat
+            })
+            const dynamic_link &#x3D; await this.createDynamicLink(&#x60;https://bidbuddy.app/products/${key}&#x60;, this.imageURLs[0])
+            const product: Product &#x3D; {
+                id: key,
+                name: this.product_name,
+                price: this.product_price,
+                pictures: this.imageURLs,
+                description: this.product_desc,
+                deliver_type: this.product_type,
+                category_id: getCurrentCategory[0].id,
+                merchant_id: (this.isMerchantAccount) ? this.business_owner : mer_id,
+                status: &#x60;${this.product_status}&#x60; &#x3D;&#x3D; &#x27;false&#x27; ? false : true,
+                start_time: this.product_start_date,
+                end_time: this.product_end_date,
+                coupon_code: this.product_coupon_code,
+                coupon_value_type: this.product_coupon_value_type,
+                coupon_value: this.product_coupon_value,
+                created_date: &#x60;${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}&#x60;,
+                created_by: &#x60;${current_name}|${current_email}&#x60;,
+                deleted: false,
+                modified_date: &#x60;${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}&#x60;,
+                dynamic_link: dynamic_link[&#x27;shortLink&#x27;],
+                rating: 0.0,
+            }
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).doc(key).set(product).then(d &#x3D;&gt; {
+                this.config.logActivity(&#x60;${current_name}|${current_email} created this product: ${this.product_name}&#x60;)
+                this.previewProgressSpinner.close()
+                this.config.displayMessage(&#x60;Product created successfully.&#x60;, true);
+                this.addNewPro &#x3D; false
+                this.editPro &#x3D; false
+                this.clearField()
+            }).catch(err &#x3D;&gt; {
+                this.previewProgressSpinner.close()
+                this.config.displayMessage(&#x60;${err}&#x60;, false);
+            })
+        } else {//update
+            //var image_url &#x3D; this.basket_image
+            // if (image.length &gt; 0) {
+            //     const key &#x3D; firebase.database().ref().push().key
+            //     const upload_task &#x3D; firebase.storage().ref(&quot;product&quot;).child(&#x60;${key}.jpg&#x60;)
+            //     upload_task.put(image.item(0)).then(task &#x3D;&gt; {
+            //         upload_task.getDownloadURL().then(url &#x3D;&gt; {
+            //             image_url &#x3D; url
+            //             this.updateValues(image_url)
+            //         }).catch(err &#x3D;&gt; {
+            //             this.previewProgressSpinner.close()
+            //             this.config.displayMessage(&#x60;${err}&#x60;, false);
+            //         })
+            //     }).catch(err &#x3D;&gt; {
+            //         this.previewProgressSpinner.close()
+            //         this.config.displayMessage(&#x60;${err}&#x60;, false);
+            //     })
+            // } else {
+            //     this.updateValues(image_url)
+            // }
+            this.updateValues(null)
+        }
+
+    }
+
+    updateValues(image_urls: string[]) {
+        var mer_id &#x3D; &#x27;&#x27;
+        if (this.isMerchantAccount) {
+            const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+                return value.display &#x3D;&#x3D; this.product_merchant[0].value
+            })
+            mer_id &#x3D; getCurrentMerchant[0].id
+        }
+        const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+            return value.name &#x3D;&#x3D; this.product_cat
+        })
+        const product: Product &#x3D; {
+            name: this.product_name,
+            price: this.product_price,
+            pictures: this.imageURLs,
+            description: this.product_desc,
+            deliver_type: this.product_type,
+            category_id: getCurrentCategory[0].id,
+            merchant_id: (this.isMerchantAccount) ? this.business_owner : mer_id,
+            status: &#x60;${this.product_status}&#x60; &#x3D;&#x3D; &#x27;false&#x27; ? false : true,
+            start_time: this.product_start_date,
+            end_time: this.product_end_date,
+            coupon_code: this.product_coupon_code,
+            coupon_value_type: this.product_coupon_value_type,
+            coupon_value: this.product_coupon_value,
+            modified_date: &#x60;${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}&#x60;,
+        }
+        const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+        const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).doc(this.currentProRow.id).update(product).then(d &#x3D;&gt; {
+            this.config.logActivity(&#x60;${current_name}|${current_email} updated this product: ${this.product_name}&#x60;)
+            this.previewProgressSpinner.close()
+            this.config.displayMessage(&#x60;Product updated successfully.&#x60;, true);
+            this.addNewPro &#x3D; false
+            this.editPro &#x3D; false
+            this.clearField()
+        }).catch(err &#x3D;&gt; {
+            this.previewProgressSpinner.close()
+            this.config.displayMessage(&#x60;${err}&#x60;, false);
+        })
+    }
+
+    restoreProClick(_id: any) {
+        const id &#x3D; &#x60;${this.products[_id].id}&#x60;
+        const name &#x3D; &#x60;${this.products[_id].name}&#x60;
+        swal({
+            title: &#x27;Restore Alert&#x27;,
+            text: &#x27;Are you sure about restoring this product?&#x27;,
+            type: &#x27;warning&#x27;,
+            showCancelButton: true,
+            confirmButtonText: &#x27;Yes, restore it!&#x27;,
+            cancelButtonText: &#x27;No, keep it&#x27;,
+            confirmButtonClass: &quot;btn btn-success&quot;,
+            cancelButtonClass: &quot;btn btn-danger&quot;,
+            buttonsStyling: false
+        }).then((result) &#x3D;&gt; {
+            if (result.value) {
+                firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).doc(id).update({ &#x27;deleted&#x27;: false }).then(del &#x3D;&gt; {
+                    const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+                    const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+                    this.config.logActivity(&#x60;${current_name}|${current_email} restored this product: ${name}&#x60;)
+                    this.config.displayMessage(&quot;Successfully restored&quot;, true);
+                }).catch(err &#x3D;&gt; {
+                    this.config.displayMessage(&#x60;${err}&#x60;, false);
+                })
+            } else {
+                swal({
+                    title: &#x27;Cancelled&#x27;,
+                    text: &#x27;Restoration not successful&#x27;,
+                    type: &#x27;error&#x27;,
+                    confirmButtonClass: &quot;btn btn-info&quot;,
+                    buttonsStyling: false
+                }).catch(swal.noop)
+            }
+        })
+    }
+
+    deletePro(_id: any) {
+        const id &#x3D; &#x60;${this.products[_id].id}&#x60;
+        const name &#x3D; &#x60;${this.products[_id].name}&#x60;
+        swal({
+            title: &#x27;Delete Alert&#x27;,
+            text: &#x27;Are you sure about deleting this product?&#x27;,
+            type: &#x27;warning&#x27;,
+            showCancelButton: true,
+            confirmButtonText: &#x27;Yes, delete it!&#x27;,
+            cancelButtonText: &#x27;No, keep it&#x27;,
+            confirmButtonClass: &quot;btn btn-success&quot;,
+            cancelButtonClass: &quot;btn btn-danger&quot;,
+            buttonsStyling: false
+        }).then((result) &#x3D;&gt; {
+            if (result.value) {
+                firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).doc(id).update({ &#x27;deleted&#x27;: true }).then(del &#x3D;&gt; {
+                    const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+                    const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+                    this.config.logActivity(&#x60;${current_name}|${current_email} deleted this product: ${name}&#x60;)
+                    this.config.displayMessage(&quot;Successfully deleted&quot;, true);
+                }).catch(err &#x3D;&gt; {
+                    this.config.displayMessage(&#x60;${err}&#x60;, false);
+                })
+            } else {
+                swal({
+                    title: &#x27;Cancelled&#x27;,
+                    text: &#x27;Deletion not successful&#x27;,
+                    type: &#x27;error&#x27;,
+                    confirmButtonClass: &quot;btn btn-info&quot;,
+                    buttonsStyling: false
+                }).catch(swal.noop)
+            }
+        })
+    }
+
+    copyLink(_id: any) {
+        const link &#x3D; &#x60;${this.products[_id].dynamic_link}&#x60;
+        this.clip.copyFromContent(link)
+        this.config.displayMessage(&#x60;${link} copied to clipboard&#x60;, true)
+        //this.toast.success(&#x27;Link copied to clipboard&#x27;)
+        // ngxClipboard [cbContent]&#x3D;&quot;row[8]&quot; (cbOnSuccess)&#x3D;&quot;isCopied &#x3D; true&quot;
+    }
+
+    editProClick(_id: any) {
+        this.editPro &#x3D; true
+        this.addNewPro &#x3D; true
+        this.currentProRow &#x3D; this.products[_id]
+
+        const getCurrentMerchant &#x3D; this.merchants.filter((value, index, array) &#x3D;&gt; {
+            return value.id &#x3D;&#x3D; this.currentProRow.merchant_id
+        })
+        const getCurrentCategory &#x3D; this.main_categories.filter((value, index, array) &#x3D;&gt; {
+            return value.id &#x3D;&#x3D; this.currentProRow.category_id
+        })
+        //////fill in fields///////////////////
+        // console.log(this.currentProRow.start_time[&#x27;seconds&#x27;] * 1000)
+        // const dt1 &#x3D; new Date(this.currentProRow.start_time[&#x27;seconds&#x27;] * 1000)
+        // console.log(&#x60;${dt.getFullYear()}-${dt.getMonth()}-${dt.getDate()} : ${dt.getHours()}/${dt.getMinutes()}&#x60;)
+        // console.log(this.currentProRow.start_time)
+        this.imageURLs &#x3D; this.currentProRow.pictures
+        this.product_image &#x3D; this.currentProRow.pictures[0]
+        this.product_name &#x3D; this.currentProRow.name
+        this.product_price &#x3D; this.currentProRow.price
+        this.product_desc &#x3D; this.currentProRow.description
+        this.product_type &#x3D; this.currentProRow.deliver_type
+        this.product_cat &#x3D; getCurrentCategory[0].name
+        this.product_merchant &#x3D; getCurrentMerchant
+        this.product_status &#x3D; this.currentProRow.status
+        this.product_start_date &#x3D; this.currentProRow.start_time
+        this.product_end_date &#x3D; this.currentProRow.end_time
+        this.product_coupon_code &#x3D; this.currentProRow.coupon_code
+        this.product_coupon_value_type &#x3D; this.currentProRow.coupon_value_type
+        this.product_coupon_value &#x3D; this.currentProRow.coupon_value
+        this.product_dynamic_link &#x3D; this.currentProRow.dynamic_link
+    }
+
+    ngAfterViewInit() {
+        (&lt;any&gt;$(&#x27;#datatables&#x27;)).DataTable({
+            &quot;pagingType&quot;: &quot;full_numbers&quot;,
+            &quot;lengthMenu&quot;: [
+                [10, 25, 50, -1],
+                [10, 25, 50, &quot;All&quot;]
+            ],
+            responsive: true,
+            language: {
+                search: &quot;_INPUT_&quot;,
+                searchPlaceholder: &quot;Search records&quot;,
+            }
+
+        });
+
+        const table &#x3D; (&lt;any&gt;$(&#x27;#datatables&#x27;)).DataTable();
+        //$(&#x27;&#x27;).modal()
+        $(&#x27;.card .material-datatables label&#x27;).addClass(&#x27;form-group&#x27;);
+    }
+
+    createDynamicLink(product_link: string, image_url: string) {
+        const options &#x3D; {
+            &quot;dynamicLinkInfo&quot;: {
+                &quot;domainUriPrefix&quot;: &quot;bidbuddyapp.page.link&quot;,
+                &quot;link&quot;: product_link,
+                &quot;navigationInfo&quot;: {
+                    &quot;enableForcedRedirect&quot;: true,
+                },
+                &quot;socialMetaTagInfo&quot;: {
+                    &quot;socialTitle&quot;: this.product_name,
+                    &quot;socialDescription&quot;: this.product_desc,
+                    &quot;socialImageLink&quot;: image_url
+                }
+            },
+            &quot;suffix&quot;: {
+                &quot;option&quot;: &quot;SHORT&quot;
+            }
+        }
+        return this.http.post(&quot;https://firebasedynamiclinks.googleapis.com/v1/shortLinks?key&#x3D;AIzaSyA-oWOPOWQ4IFw1UKg5nMcyzwn1SGPdLyg&quot;, options, { headers: new HttpHeaders({ &#x27;Content-Type&#x27;: &#x27;application/json&#x27; }) }).toPromise()
+    }
+}</code></pre>
+    </div>
+</div>
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'DataTable-5.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

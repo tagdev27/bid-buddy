@@ -1,0 +1,113 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row" *ngIf="isAddEdit">
+            <div class="col-md-12">
+                <div class="card ">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">mail_outline</i>
+                        </div>
+                        <h4 class="card-title">Subscriptions Settings</h4>
+                    </div>
+                    <div class="card-body ">
+                        <form method="#" action="#">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Plan Name" type="text" name="title"
+                                    [(ngModel)]="pName">
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Plan Description" type="text" name="des"
+                                    [(ngModel)]="pDesc">
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Plan Icon (https://material.io/resources/icons/)" type="text" name="symbol"
+                                    [(ngModel)]="pIcon">
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Plan Minimum Users" type="number" name="min"
+                                    [(ngModel)]="pMin">
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Plan Monthly Price" type="number" name="mon"
+                                    [(ngModel)]="pMonthly">
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Plan Yearly Price" type="number" name="yr"
+                                    [(ngModel)]="pYearly">
+                            </mat-form-field>
+                            <tag-input [(ngModel)]='pFeatures' secondaryPlaceholder="Enter selling features." editable="editable" name="btg" theme='filled-theme'></tag-input>
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Paystack Plan ID" type="text" name="pid"
+                                    [(ngModel)]="paystack_plan_id">
+                            </mat-form-field>
+                        </form>
+                    </div>
+                    <div class="card-footer ">
+                        <button mat-raised-button type="button" class="btn btn-fill btn-rose"
+                            (click)="submitCurrency()">Submit</button>
+                        <button mat-raised-button type="button" class="btn btn-fill btn-danger"
+                            (click)="cancelCurrency()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="!isAddEdit">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">assignment</i>
+                        </div>
+                        <h4 class="card-title">Subscriptions</h4>
+                    </div>
+                    <div class="td-actions text-right">
+                        <button mat-raised-button type="button" class="btn btn-danger btn-round"
+                            (click)="addCurrency()" ngbAutofocus>
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">{{ tableData1.headerRow[0] }}</th>
+                                        <th>{{ tableData1.headerRow[1] }}</th>
+                                        <th>{{ tableData1.headerRow[2] }}</th>
+                                        <th>{{ tableData1.headerRow[3] }}</th>
+                                        <th>{{ tableData1.headerRow[4] }}</th>
+                                        <th>{{ tableData1.headerRow[5] }}</th>
+                                        <th>{{ tableData1.headerRow[6] }}</th>
+                                        <th>{{ tableData1.headerRow[7] }}</th>
+                                        <th class="text-right">{{ tableData1.headerRow[8] }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let row of tableData1.dataRows">
+                                        <td class="text-center">{{row[0]}}</td>
+                                        <td>{{row[2]}}</td>
+                                        <td>{{row[3]}}</td>
+                                        <td>{{row[4]}}</td>
+                                        <td>{{row[5]}}</td>
+                                        <td>{{row[6]}}</td>
+                                        <td>{{row[7]}}</td>
+                                        <td class="td-actions text-right">
+                                            <button mat-raised-button type="button" class="btn btn-success {{row[8]}}"
+                                                (click)="editCurr(row[0])">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button mat-raised-button type="button" class="btn btn-danger {{row[8]}}"
+                                                (click)="deleteCurr(row)">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

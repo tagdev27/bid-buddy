@@ -1,0 +1,1628 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bid-buddy documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/stripe.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bid-buddy documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PlansComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/store/plans/plans.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-plans-cmp</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./plans.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./plans.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeResult">closeResult</a>
+                            </li>
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#currentCurrent">currentCurrent</a>
+                            </li>
+                            <li>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                <a href="#isAddCurrency">isAddCurrency</a>
+                            </li>
+                            <li>
+                                <a href="#isAddEdit">isAddEdit</a>
+                            </li>
+                            <li>
+                                <a href="#paystack_plan_id">paystack_plan_id</a>
+                            </li>
+                            <li>
+                                <a href="#pDesc">pDesc</a>
+                            </li>
+                            <li>
+                                <a href="#pFeatures">pFeatures</a>
+                            </li>
+                            <li>
+                                <a href="#pIcon">pIcon</a>
+                            </li>
+                            <li>
+                                <a href="#plans">plans</a>
+                            </li>
+                            <li>
+                                <a href="#pMin">pMin</a>
+                            </li>
+                            <li>
+                                <a href="#pMonthly">pMonthly</a>
+                            </li>
+                            <li>
+                                <a href="#pName">pName</a>
+                            </li>
+                            <li>
+                                <a href="#pYearly">pYearly</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tableData1">tableData1</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addCurrency">addCurrency</a>
+                            </li>
+                            <li>
+                                <a href="#cancelCurrency">cancelCurrency</a>
+                            </li>
+                            <li>
+                                <a href="#clearFields">clearFields</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCurr">deleteCurr</a>
+                            </li>
+                            <li>
+                                <a href="#editCurr">editCurr</a>
+                            </li>
+                            <li>
+                                <a href="#getCurrencies">getCurrencies</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#submitCurrency">submitCurrency</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(previewProgressSpinner: <a href="../injectables/OverlayService.html">OverlayService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/store/plans/plans.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>previewProgressSpinner</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OverlayService.html" target="_self" >OverlayService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCurrency"></a>
+                    <span class="name">
+                        <b>
+                            addCurrency
+                        </b>
+                        <a href="#addCurrency"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addCurrency()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelCurrency"></a>
+                    <span class="name">
+                        <b>
+                            cancelCurrency
+                        </b>
+                        <a href="#cancelCurrency"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancelCurrency()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearFields"></a>
+                    <span class="name">
+                        <b>
+                            clearFields
+                        </b>
+                        <a href="#clearFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearFields()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteCurr"></a>
+                    <span class="name">
+                        <b>
+                            deleteCurr
+                        </b>
+                        <a href="#deleteCurr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteCurr(curr: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>curr</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editCurr"></a>
+                    <span class="name">
+                        <b>
+                            editCurr
+                        </b>
+                        <a href="#editCurr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editCurr(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrencies"></a>
+                    <span class="name">
+                        <b>
+                            getCurrencies
+                        </b>
+                        <a href="#getCurrencies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCurrencies()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitCurrency"></a>
+                    <span class="name">
+                        <b>
+                            submitCurrency
+                        </b>
+                        <a href="#submitCurrency"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitCurrency()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/app/store/plans/plans.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeResult"></a>
+                        <span class="name">
+                            <b>
+                            closeResult</b>
+                            <a href="#closeResult"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/store/plans/plans.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new AppConfig()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/store/plans/plans.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentCurrent"></a>
+                        <span class="name">
+                            <b>
+                            currentCurrent</b>
+                            <a href="#currentCurrent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Subscriptions.html" target="_self" >Subscriptions</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/store/plans/plans.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                            data</b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[][]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/store/plans/plans.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAddCurrency"></a>
+                        <span class="name">
+                            <b>
+                            isAddCurrency</b>
+                            <a href="#isAddCurrency"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/store/plans/plans.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAddEdit"></a>
+                        <span class="name">
+                            <b>
+                            isAddEdit</b>
+                            <a href="#isAddEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/store/plans/plans.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paystack_plan_id"></a>
+                        <span class="name">
+                            <b>
+                            paystack_plan_id</b>
+                            <a href="#paystack_plan_id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/store/plans/plans.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pDesc"></a>
+                        <span class="name">
+                            <b>
+                            pDesc</b>
+                            <a href="#pDesc"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/store/plans/plans.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pFeatures"></a>
+                        <span class="name">
+                            <b>
+                            pFeatures</b>
+                            <a href="#pFeatures"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/store/plans/plans.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pIcon"></a>
+                        <span class="name">
+                            <b>
+                            pIcon</b>
+                            <a href="#pIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/store/plans/plans.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plans"></a>
+                        <span class="name">
+                            <b>
+                            plans</b>
+                            <a href="#plans"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Subscriptions.html" target="_self" >Subscriptions[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/store/plans/plans.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pMin"></a>
+                        <span class="name">
+                            <b>
+                            pMin</b>
+                            <a href="#pMin"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/store/plans/plans.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pMonthly"></a>
+                        <span class="name">
+                            <b>
+                            pMonthly</b>
+                            <a href="#pMonthly"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/store/plans/plans.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pName"></a>
+                        <span class="name">
+                            <b>
+                            pName</b>
+                            <a href="#pName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/store/plans/plans.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pYearly"></a>
+                        <span class="name">
+                            <b>
+                            pYearly</b>
+                            <a href="#pYearly"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/store/plans/plans.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableData1"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            tableData1</b>
+                            <a href="#tableData1"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TableData.html" target="_self" >TableData</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/store/plans/plans.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &quot;@angular/core&quot;;
+import { Currency } from &quot;../../models/currency&quot;;
+import { AppConfig } from &quot;../../services/global.service&quot;;
+import * as firebase from &quot;firebase&quot;
+import swal from &quot;sweetalert2&quot;;
+import { OverlayService } from &#x27;../../overlay/overlay.module&#x27;;
+import { ProgressSpinnerComponent } from &#x27;../../progress-spinner/progress-spinner.module&#x27;;
+import { Subscriptions } from &quot;src/app/models/plans&quot;;
+
+declare interface TableData {
+    headerRow: string[];
+    dataRows: string[][];
+}
+
+@Component({
+    selector: &#x27;app-plans-cmp&#x27;,
+    templateUrl: &#x27;./plans.component.html&#x27;,
+    styleUrls: [&#x27;./plans.component.css&#x27;]
+})
+
+export class PlansComponent implements OnInit, OnDestroy {
+
+    public tableData1: TableData;
+    plans: Subscriptions[] &#x3D; []
+    config &#x3D; new AppConfig()
+    data: string[][] &#x3D; [];
+    closeResult &#x3D; &#x27;&#x27;
+
+    isAddEdit &#x3D; false
+    isAddCurrency &#x3D; true
+    pName &#x3D; &#x27;&#x27;
+    pDesc &#x3D; &#x27;&#x27;
+    pIcon &#x3D; &#x27;&#x27;
+    pMin &#x3D; 0
+    pMonthly &#x3D; 0
+    pYearly &#x3D; 0
+    pFeatures &#x3D; []
+    paystack_plan_id &#x3D; &#x27;&#x27;
+
+    currentCurrent: Subscriptions
+
+    constructor(private previewProgressSpinner: OverlayService){
+        this.tableData1 &#x3D; {
+            headerRow: [&#x27;#&#x27;, &#x27;Title&#x27;, &#x27;Minimum Users&#x27;, &#x27;Monthly Price&#x27;, &#x27;Yearly Price&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+            dataRows: this.data
+        };
+    }
+
+    getCurrencies() {
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;plans&#x27;).onSnapshot(query &#x3D;&gt; {
+            this.data &#x3D; []
+            this.plans &#x3D; []
+            var index &#x3D; 0
+            query.forEach(data &#x3D;&gt; {
+                const p &#x3D; &lt;Subscriptions&gt;data.data()
+                this.plans.push(p)
+                this.data.push([&#x60;${index + 1}&#x60;, p.id, p.title, &#x60;${p.minimum_users}&#x60;, &#x60;₦${p.monthly_price}&#x60;, &#x60;₦${p.yearly_price}&#x60;, p.created_date, p.modified_date, &#x27;btn-link&#x27;])
+                index &#x3D; index + 1
+            })
+            this.tableData1 &#x3D; {
+                headerRow: [&#x27;#&#x27;, &#x27;Title&#x27;, &#x27;Minimum Users&#x27;, &#x27;Monthly Price&#x27;, &#x27;Yearly Price&#x27;, &#x27;Created Date&#x27;, &#x27;Modified Date&#x27;, &#x27;Actions&#x27;],
+                dataRows: this.data
+            };
+        });
+    }
+
+    ngOnDestroy() {
+
+    }
+
+    ngOnInit() {
+        this.getCurrencies()
+    }
+
+    addCurrency() {
+        this.isAddEdit &#x3D; true
+    }
+
+    cancelCurrency() {
+        this.isAddEdit &#x3D; false
+        this.clearFields()
+    }
+
+    clearFields() {
+        this.pName &#x3D; &#x27;&#x27;
+        this.pDesc &#x3D; &#x27;&#x27;
+        this.pIcon &#x3D; &#x27;&#x27;
+        this.pMin &#x3D; 0
+        this.pMonthly &#x3D; 0
+        this.pYearly &#x3D; 0
+        this.pFeatures &#x3D; []
+        this.paystack_plan_id &#x3D; &#x27;&#x27;
+    }
+
+    editCurr(id: any) {
+        const index &#x3D; Number(id) - 1
+        this.currentCurrent &#x3D; this.plans[index]
+        this.pName &#x3D; this.currentCurrent.title
+        this.pDesc &#x3D; this.currentCurrent.description
+        this.pIcon &#x3D; this.currentCurrent.icon
+        this.pMin &#x3D; this.currentCurrent.minimum_users
+        this.pMonthly &#x3D; this.currentCurrent.monthly_price
+        this.pYearly &#x3D; this.currentCurrent.yearly_price
+        this.pFeatures &#x3D; this.currentCurrent.features
+        this.paystack_plan_id &#x3D; this.currentCurrent.paystack_plan_id
+
+        this.isAddCurrency &#x3D; false
+        this.isAddEdit &#x3D; true
+    }
+
+    deleteCurr(curr: any) {
+        const id &#x3D; &#x60;${curr[1]}&#x60;
+        swal({
+            title: &#x27;Delete Alert&#x27;,
+            text: &#x27;Are you sure about deleting this subscription?&#x27;,
+            type: &#x27;warning&#x27;,
+            showCancelButton: true,
+            confirmButtonText: &#x27;Yes, delete it!&#x27;,
+            cancelButtonText: &#x27;No, keep it&#x27;,
+            confirmButtonClass: &quot;btn btn-success&quot;,
+            cancelButtonClass: &quot;btn btn-danger&quot;,
+            buttonsStyling: false
+        }).then((result) &#x3D;&gt; {
+            if (result.value) {
+                firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;plans&#x27;).doc(id).delete().then(del &#x3D;&gt; {
+                    const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+                    const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+                    this.config.logActivity(&#x60;${current_name}|${current_email} deleted this subscription: ${curr[2]}&#x60;)
+                    this.config.displayMessage(&quot;Successfully deleted&quot;, true);
+                }).catch(err &#x3D;&gt; {
+                    this.config.displayMessage(&#x60;${err}&#x60;, false);
+                })
+            } else {
+                swal({
+                    title: &#x27;Cancelled&#x27;,
+                    text: &#x27;Deletion not successful&#x27;,
+                    type: &#x27;error&#x27;,
+                    confirmButtonClass: &quot;btn btn-info&quot;,
+                    buttonsStyling: false
+                }).catch(swal.noop)
+            }
+        })
+    }
+
+    submitCurrency() {
+        if (this.pName &#x3D;&#x3D; &#x27;&#x27; || this.pMin &#x3D;&#x3D; 0 || this.pDesc &#x3D;&#x3D; &#x27;&#x27; || this.pIcon &#x3D;&#x3D; &#x27;&#x27; || this.pMonthly &#x3D;&#x3D; null || this.pYearly &#x3D;&#x3D; null || this.pFeatures.length &#x3D;&#x3D; 0) {
+            this.config.displayMessage(&quot;Please enter all fields.&quot;, false)
+            return
+        }
+        this.previewProgressSpinner.open({ hasBackdrop: true }, ProgressSpinnerComponent);
+        const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+        const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+        if (this.isAddCurrency) {
+            const id &#x3D; firebase.database().ref().push().key
+            const newCurr: Subscriptions &#x3D; {
+                id: id,
+                paystack_plan_id:this.paystack_plan_id,
+                created_by: &#x60;${current_name}|${current_email}&#x60;,
+                created_date: &#x60;${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}&#x60;,
+                modified_date: &#x60;${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}&#x60;,
+                title:this.pName,
+                description:this.pDesc,
+                icon:this.pIcon,
+                minimum_users:this.pMin,
+                monthly_price:this.pMonthly,
+                yearly_price:this.pYearly,
+                features:this.pFeatures
+            }
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;plans&#x27;).doc(id).set(newCurr).then(del &#x3D;&gt; {
+                this.config.logActivity(&#x60;${current_name}|${current_email} created this subscription: ${this.pName}&#x60;)
+                this.previewProgressSpinner.close()
+                this.clearFields()
+                this.config.displayMessage(&quot;Successfully created&quot;, true);
+                this.isAddEdit &#x3D; false
+                this.isAddCurrency &#x3D; true
+            }).catch(err &#x3D;&gt; {
+                this.previewProgressSpinner.close()
+                this.config.displayMessage(&#x60;${err}&#x60;, false);
+            })
+        } else {
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;plans&#x27;).doc(this.currentCurrent.id).update({
+                &#x27;modified_date&#x27;: &#x60;${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}&#x60;,
+                title:this.pName,
+                description:this.pDesc,
+                icon:this.pIcon,
+                minimum_users:this.pMin,
+                monthly_price:this.pMonthly,
+                yearly_price:this.pYearly,
+                features:this.pFeatures,
+                paystack_plan_id: this.paystack_plan_id
+            }).then(del &#x3D;&gt; {
+                this.config.logActivity(&#x60;${current_name}|${current_email} updated this subscription: ${this.pName}&#x60;)
+                this.previewProgressSpinner.close()
+                this.clearFields()
+                this.config.displayMessage(&quot;Successfully updated&quot;, true);
+                this.isAddEdit &#x3D; false
+                this.isAddCurrency &#x3D; true
+            }).catch(err &#x3D;&gt; {
+                this.previewProgressSpinner.close()
+                this.config.displayMessage(&#x60;${err}&#x60;, false);
+            })
+        }
+    }
+
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;main-content&quot;&gt;
+    &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;isAddEdit&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                &lt;div class&#x3D;&quot;card &quot;&gt;
+                    &lt;div class&#x3D;&quot;card-header card-header-danger card-header-icon&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+                            &lt;i class&#x3D;&quot;material-icons&quot;&gt;mail_outline&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Subscriptions Settings&lt;/h4&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;card-body &quot;&gt;
+                        &lt;form method&#x3D;&quot;#&quot; action&#x3D;&quot;#&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Plan Name&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;title&quot;
+                                    [(ngModel)]&#x3D;&quot;pName&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Plan Description&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;des&quot;
+                                    [(ngModel)]&#x3D;&quot;pDesc&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Plan Icon (https://material.io/resources/icons/)&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;symbol&quot;
+                                    [(ngModel)]&#x3D;&quot;pIcon&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Plan Minimum Users&quot; type&#x3D;&quot;number&quot; name&#x3D;&quot;min&quot;
+                                    [(ngModel)]&#x3D;&quot;pMin&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Plan Monthly Price&quot; type&#x3D;&quot;number&quot; name&#x3D;&quot;mon&quot;
+                                    [(ngModel)]&#x3D;&quot;pMonthly&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Plan Yearly Price&quot; type&#x3D;&quot;number&quot; name&#x3D;&quot;yr&quot;
+                                    [(ngModel)]&#x3D;&quot;pYearly&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;tag-input [(ngModel)]&#x3D;&#x27;pFeatures&#x27; secondaryPlaceholder&#x3D;&quot;Enter selling features.&quot; editable&#x3D;&quot;editable&quot; name&#x3D;&quot;btg&quot; theme&#x3D;&#x27;filled-theme&#x27;&gt;&lt;/tag-input&gt;
+                            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Paystack Plan ID&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;pid&quot;
+                                    [(ngModel)]&#x3D;&quot;paystack_plan_id&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;card-footer &quot;&gt;
+                        &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-fill btn-rose&quot;
+                            (click)&#x3D;&quot;submitCurrency()&quot;&gt;Submit&lt;/button&gt;
+                        &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-fill btn-danger&quot;
+                            (click)&#x3D;&quot;cancelCurrency()&quot;&gt;Cancel&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;!isAddEdit&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                &lt;div class&#x3D;&quot;card&quot;&gt;
+                    &lt;div class&#x3D;&quot;card-header card-header-danger card-header-icon&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+                            &lt;i class&#x3D;&quot;material-icons&quot;&gt;assignment&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Subscriptions&lt;/h4&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;td-actions text-right&quot;&gt;
+                        &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-round&quot;
+                            (click)&#x3D;&quot;addCurrency()&quot; ngbAutofocus&gt;
+                            &lt;i class&#x3D;&quot;material-icons&quot;&gt;add&lt;/i&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                        &lt;div class&#x3D;&quot;table-responsive&quot;&gt;
+                            &lt;table class&#x3D;&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th class&#x3D;&quot;text-center&quot;&gt;{{ tableData1.headerRow[0] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[1] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[2] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[3] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[4] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[5] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[6] }}&lt;/th&gt;
+                                        &lt;th&gt;{{ tableData1.headerRow[7] }}&lt;/th&gt;
+                                        &lt;th class&#x3D;&quot;text-right&quot;&gt;{{ tableData1.headerRow[8] }}&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr *ngFor&#x3D;&quot;let row of tableData1.dataRows&quot;&gt;
+                                        &lt;td class&#x3D;&quot;text-center&quot;&gt;{{row[0]}}&lt;/td&gt;
+                                        &lt;td&gt;{{row[2]}}&lt;/td&gt;
+                                        &lt;td&gt;{{row[3]}}&lt;/td&gt;
+                                        &lt;td&gt;{{row[4]}}&lt;/td&gt;
+                                        &lt;td&gt;{{row[5]}}&lt;/td&gt;
+                                        &lt;td&gt;{{row[6]}}&lt;/td&gt;
+                                        &lt;td&gt;{{row[7]}}&lt;/td&gt;
+                                        &lt;td class&#x3D;&quot;td-actions text-right&quot;&gt;
+                                            &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success {{row[8]}}&quot;
+                                                (click)&#x3D;&quot;editCurr(row[0])&quot;&gt;
+                                                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+                                            &lt;/button&gt;
+                                            &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger {{row[8]}}&quot;
+                                                (click)&#x3D;&quot;deleteCurr(row)&quot;&gt;
+                                                &lt;i class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
+                                            &lt;/button&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./plans.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="main-content">    <div class="container-fluid">        <div class="row" *ngIf="isAddEdit">            <div class="col-md-12">                <div class="card ">                    <div class="card-header card-header-danger card-header-icon">                        <div class="card-icon">                            <i class="material-icons">mail_outline</i>                        </div>                        <h4 class="card-title">Subscriptions Settings</h4>                    </div>                    <div class="card-body ">                        <form method="#" action="#">                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Plan Name" type="text" name="title"                                    [(ngModel)]="pName">                            </mat-form-field>                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Plan Description" type="text" name="des"                                    [(ngModel)]="pDesc">                            </mat-form-field>                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Plan Icon (https://material.io/resources/icons/)" type="text" name="symbol"                                    [(ngModel)]="pIcon">                            </mat-form-field>                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Plan Minimum Users" type="number" name="min"                                    [(ngModel)]="pMin">                            </mat-form-field>                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Plan Monthly Price" type="number" name="mon"                                    [(ngModel)]="pMonthly">                            </mat-form-field>                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Plan Yearly Price" type="number" name="yr"                                    [(ngModel)]="pYearly">                            </mat-form-field>                            <tag-input [(ngModel)]=\'pFeatures\' secondaryPlaceholder="Enter selling features." editable="editable" name="btg" theme=\'filled-theme\'></tag-input>                            <mat-form-field class="example-full-width">                                <input matInput placeholder="Paystack Plan ID" type="text" name="pid"                                    [(ngModel)]="paystack_plan_id">                            </mat-form-field>                        </form>                    </div>                    <div class="card-footer ">                        <button mat-raised-button type="button" class="btn btn-fill btn-rose"                            (click)="submitCurrency()">Submit</button>                        <button mat-raised-button type="button" class="btn btn-fill btn-danger"                            (click)="cancelCurrency()">Cancel</button>                    </div>                </div>            </div>        </div>        <div class="row" *ngIf="!isAddEdit">            <div class="col-md-12">                <div class="card">                    <div class="card-header card-header-danger card-header-icon">                        <div class="card-icon">                            <i class="material-icons">assignment</i>                        </div>                        <h4 class="card-title">Subscriptions</h4>                    </div>                    <div class="td-actions text-right">                        <button mat-raised-button type="button" class="btn btn-danger btn-round"                            (click)="addCurrency()" ngbAutofocus>                            <i class="material-icons">add</i>                        </button>                    </div>                    <div class="card-body">                        <div class="table-responsive">                            <table class="table">                                <thead>                                    <tr>                                        <th class="text-center">{{ tableData1.headerRow[0] }}</th>                                        <th>{{ tableData1.headerRow[1] }}</th>                                        <th>{{ tableData1.headerRow[2] }}</th>                                        <th>{{ tableData1.headerRow[3] }}</th>                                        <th>{{ tableData1.headerRow[4] }}</th>                                        <th>{{ tableData1.headerRow[5] }}</th>                                        <th>{{ tableData1.headerRow[6] }}</th>                                        <th>{{ tableData1.headerRow[7] }}</th>                                        <th class="text-right">{{ tableData1.headerRow[8] }}</th>                                    </tr>                                </thead>                                <tbody>                                    <tr *ngFor="let row of tableData1.dataRows">                                        <td class="text-center">{{row[0]}}</td>                                        <td>{{row[2]}}</td>                                        <td>{{row[3]}}</td>                                        <td>{{row[4]}}</td>                                        <td>{{row[5]}}</td>                                        <td>{{row[6]}}</td>                                        <td>{{row[7]}}</td>                                        <td class="td-actions text-right">                                            <button mat-raised-button type="button" class="btn btn-success {{row[8]}}"                                                (click)="editCurr(row[0])">                                                <i class="material-icons">edit</i>                                            </button>                                            <button mat-raised-button type="button" class="btn btn-danger {{row[8]}}"                                                (click)="deleteCurr(row)">                                                <i class="material-icons">close</i>                                            </button>                                        </td>                                    </tr>                                </tbody>                            </table>                        </div>                    </div>                </div>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AdminLayoutComponent', 'selector': 'app-layout'},{'name': 'AppComponent', 'selector': 'app-my-app'},{'name': 'AuthLayoutComponent', 'selector': 'app-layout'},{'name': 'BidRateComponent', 'selector': 'app-bidrate-cmp'},{'name': 'BidsComponent', 'selector': 'app-bids'},{'name': 'CategoryComponent', 'selector': 'app-category-cmp'},{'name': 'CustomersComponent', 'selector': 'app-customers-cmp'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ExtendedFormsComponent', 'selector': 'app-extendedforms-cmp'},{'name': 'FieldErrorDisplayComponent', 'selector': 'app-field-error-display'},{'name': 'FixedpluginComponent', 'selector': 'app-fixedplugin'},{'name': 'FooterComponent', 'selector': 'app-footer-cmp'},{'name': 'GeneralComponent', 'selector': 'app-general-cmp'},{'name': 'LockComponent', 'selector': 'app-lock-cmp'},{'name': 'LoginComponent', 'selector': 'app-login-cmp'},{'name': 'LogsComponent', 'selector': 'app-logs-cmp'},{'name': 'MerchantsComponent', 'selector': 'app-merchants-cmp'},{'name': 'MessageTemplatesComponent', 'selector': 'app-message-templates-cmp'},{'name': 'NavbarComponent', 'selector': 'app-navbar-cmp'},{'name': 'PaymentComponent', 'selector': 'app-payment-cmp'},{'name': 'PlansComponent', 'selector': 'app-plans-cmp'},{'name': 'PricingComponent', 'selector': 'app-pricing-cmp'},{'name': 'ProductsComponent', 'selector': 'app-products-cmp'},{'name': 'ProgressSpinnerComponent', 'selector': 'app-progress-spinner'},{'name': 'ReferralsComponent', 'selector': 'app-referrals-cmp'},{'name': 'RegisterComponent', 'selector': 'app-register-cmp'},{'name': 'RegularFormsComponent', 'selector': 'app-regularforms-cmp'},{'name': 'ReviewsComponent', 'selector': 'app-reviews-cmp'},{'name': 'SalesComponent', 'selector': 'app-sales-cmp'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SidebarComponent', 'selector': 'app-sidebar-cmp'},{'name': 'UserComponent', 'selector': 'app-user-cmp'},{'name': 'ValidationFormsComponent', 'selector': 'app-validationforms-cmp'},{'name': 'WizardComponent', 'selector': 'app-wizard-cmp'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PlansComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlansComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

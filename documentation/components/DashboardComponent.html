@@ -1,0 +1,2187 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bid-buddy documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/stripe.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bid-buddy documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DashboardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/dashboard/dashboard.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dashboard</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dashboard.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#active_merchants">active_merchants</a>
+                            </li>
+                            <li>
+                                <a href="#bids">bids</a>
+                            </li>
+                            <li>
+                                <a href="#business_owner">business_owner</a>
+                            </li>
+                            <li>
+                                <a href="#completed_bids">completed_bids</a>
+                            </li>
+                            <li>
+                                <a href="#inactive_merchants">inactive_merchants</a>
+                            </li>
+                            <li>
+                                <a href="#isMerchantAccount">isMerchantAccount</a>
+                            </li>
+                            <li>
+                                <a href="#merchants">merchants</a>
+                            </li>
+                            <li>
+                                <a href="#pending_bids">pending_bids</a>
+                            </li>
+                            <li>
+                                <a href="#progress_bids">progress_bids</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tableData">tableData</a>
+                            </li>
+                            <li>
+                                <a href="#total_bidrates">total_bidrates</a>
+                            </li>
+                            <li>
+                                <a href="#total_bids">total_bids</a>
+                            </li>
+                            <li>
+                                <a href="#total_customers">total_customers</a>
+                            </li>
+                            <li>
+                                <a href="#total_dislikes">total_dislikes</a>
+                            </li>
+                            <li>
+                                <a href="#total_likes">total_likes</a>
+                            </li>
+                            <li>
+                                <a href="#total_merchants">total_merchants</a>
+                            </li>
+                            <li>
+                                <a href="#total_products">total_products</a>
+                            </li>
+                            <li>
+                                <a href="#total_sub">total_sub</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getBids">getBids</a>
+                            </li>
+                            <li>
+                                <a href="#getCurrentUser">getCurrentUser</a>
+                            </li>
+                            <li>
+                                <a href="#getMerchants">getMerchants</a>
+                            </li>
+                            <li>
+                                <a href="#getOthers">getOthers</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#startAnimationForBarChart">startAnimationForBarChart</a>
+                            </li>
+                            <li>
+                                <a href="#startAnimationForLineChart">startAnimationForLineChart</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBids"></a>
+                    <span class="name">
+                        <b>
+                            getBids
+                        </b>
+                        <a href="#getBids"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBids()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="255"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:255</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentUser"></a>
+                    <span class="name">
+                        <b>
+                            getCurrentUser
+                        </b>
+                        <a href="#getCurrentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCurrentUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMerchants"></a>
+                    <span class="name">
+                        <b>
+                            getMerchants
+                        </b>
+                        <a href="#getMerchants"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMerchants()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="329"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:329</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOthers"></a>
+                    <span class="name">
+                        <b>
+                            getOthers
+                        </b>
+                        <a href="#getOthers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOthers()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:351</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="192"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:192</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:18</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startAnimationForBarChart"></a>
+                    <span class="name">
+                        <b>
+                            startAnimationForBarChart
+                        </b>
+                        <a href="#startAnimationForBarChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startAnimationForBarChart(chart: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chart</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startAnimationForLineChart"></a>
+                    <span class="name">
+                        <b>
+                            startAnimationForLineChart
+                        </b>
+                        <a href="#startAnimationForLineChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startAnimationForLineChart(chart: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/dashboard/dashboard.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chart</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="active_merchants"></a>
+                        <span class="name">
+                            <b>
+                            active_merchants</b>
+                            <a href="#active_merchants"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="236" class="link-to-prism">src/app/dashboard/dashboard.component.ts:236</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bids"></a>
+                        <span class="name">
+                            <b>
+                            bids</b>
+                            <a href="#bids"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Bids.html" target="_self" >Bids[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="226" class="link-to-prism">src/app/dashboard/dashboard.component.ts:226</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="business_owner"></a>
+                        <span class="name">
+                            <b>
+                            business_owner</b>
+                            <a href="#business_owner"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/dashboard/dashboard.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="completed_bids"></a>
+                        <span class="name">
+                            <b>
+                            completed_bids</b>
+                            <a href="#completed_bids"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="230" class="link-to-prism">src/app/dashboard/dashboard.component.ts:230</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inactive_merchants"></a>
+                        <span class="name">
+                            <b>
+                            inactive_merchants</b>
+                            <a href="#inactive_merchants"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="237" class="link-to-prism">src/app/dashboard/dashboard.component.ts:237</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isMerchantAccount"></a>
+                        <span class="name">
+                            <b>
+                            isMerchantAccount</b>
+                            <a href="#isMerchantAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/dashboard/dashboard.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="merchants"></a>
+                        <span class="name">
+                            <b>
+                            merchants</b>
+                            <a href="#merchants"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Merchants.html" target="_self" >Merchants[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/app/dashboard/dashboard.component.ts:234</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pending_bids"></a>
+                        <span class="name">
+                            <b>
+                            pending_bids</b>
+                            <a href="#pending_bids"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="228" class="link-to-prism">src/app/dashboard/dashboard.component.ts:228</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="progress_bids"></a>
+                        <span class="name">
+                            <b>
+                            progress_bids</b>
+                            <a href="#progress_bids"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="229" class="link-to-prism">src/app/dashboard/dashboard.component.ts:229</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableData"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            tableData</b>
+                            <a href="#tableData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TableData.html" target="_self" >TableData</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/dashboard/dashboard.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_bidrates"></a>
+                        <span class="name">
+                            <b>
+                            total_bidrates</b>
+                            <a href="#total_bidrates"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="242" class="link-to-prism">src/app/dashboard/dashboard.component.ts:242</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_bids"></a>
+                        <span class="name">
+                            <b>
+                            total_bids</b>
+                            <a href="#total_bids"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="227" class="link-to-prism">src/app/dashboard/dashboard.component.ts:227</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_customers"></a>
+                        <span class="name">
+                            <b>
+                            total_customers</b>
+                            <a href="#total_customers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="239" class="link-to-prism">src/app/dashboard/dashboard.component.ts:239</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_dislikes"></a>
+                        <span class="name">
+                            <b>
+                            total_dislikes</b>
+                            <a href="#total_dislikes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="232" class="link-to-prism">src/app/dashboard/dashboard.component.ts:232</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_likes"></a>
+                        <span class="name">
+                            <b>
+                            total_likes</b>
+                            <a href="#total_likes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/app/dashboard/dashboard.component.ts:231</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_merchants"></a>
+                        <span class="name">
+                            <b>
+                            total_merchants</b>
+                            <a href="#total_merchants"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="235" class="link-to-prism">src/app/dashboard/dashboard.component.ts:235</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_products"></a>
+                        <span class="name">
+                            <b>
+                            total_products</b>
+                            <a href="#total_products"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">src/app/dashboard/dashboard.component.ts:240</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total_sub"></a>
+                        <span class="name">
+                            <b>
+                            total_sub</b>
+                            <a href="#total_sub"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="241" class="link-to-prism">src/app/dashboard/dashboard.component.ts:241</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, AfterViewInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { TableData } from &#x27;../md/md-table/md-table.component&#x27;;
+import { LegendItem, ChartType } from &#x27;../md/md-chart/md-chart.component&#x27;;
+import * as firebase from &#x27;firebase&#x27;
+
+import * as Chartist from &#x27;chartist&#x27;;
+import { AdminUsers } from &#x27;../models/admin.users&#x27;;
+import { Bids } from &#x27;../models/bids&#x27;;
+import { Merchants } from &#x27;../models/merchant&#x27;;
+
+declare const $: any;
+
+@Component({
+  selector: &#x27;app-dashboard&#x27;,
+  templateUrl: &#x27;./dashboard.component.html&#x27;
+})
+export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
+  ngOnDestroy(): void {
+  }
+  // constructor(private navbarTitleService: NavbarTitleService, private notificationService: NotificationService) { }
+  public tableData: TableData;
+
+  business_owner &#x3D; &#x27;&#x27;
+  isMerchantAccount &#x3D; false
+
+  startAnimationForLineChart(chart: any) {
+    let seq: any, delays: any, durations: any;
+    seq &#x3D; 0;
+    delays &#x3D; 80;
+    durations &#x3D; 500;
+    chart.on(&#x27;draw&#x27;, function (data: any) {
+
+      if (data.type &#x3D;&#x3D;&#x3D; &#x27;line&#x27; || data.type &#x3D;&#x3D;&#x3D; &#x27;area&#x27;) {
+        data.element.animate({
+          d: {
+            begin: 600,
+            dur: 700,
+            from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+            to: data.path.clone().stringify(),
+            easing: Chartist.Svg.Easing.easeOutQuint
+          }
+        });
+      } else if (data.type &#x3D;&#x3D;&#x3D; &#x27;point&#x27;) {
+        seq++;
+        data.element.animate({
+          opacity: {
+            begin: seq * delays,
+            dur: durations,
+            from: 0,
+            to: 1,
+            easing: &#x27;ease&#x27;
+          }
+        });
+      }
+    });
+
+    seq &#x3D; 0;
+  }
+  startAnimationForBarChart(chart: any) {
+    let seq2: any, delays2: any, durations2: any;
+    seq2 &#x3D; 0;
+    delays2 &#x3D; 80;
+    durations2 &#x3D; 500;
+    chart.on(&#x27;draw&#x27;, function (data: any) {
+      if (data.type &#x3D;&#x3D;&#x3D; &#x27;bar&#x27;) {
+        seq2++;
+        data.element.animate({
+          opacity: {
+            begin: seq2 * delays2,
+            dur: durations2,
+            from: 0,
+            to: 1,
+            easing: &#x27;ease&#x27;
+          }
+        });
+      }
+    });
+
+    seq2 &#x3D; 0;
+  }
+  // constructor(private navbarTitleService: NavbarTitleService) { }
+  public ngOnInit() {
+    this.tableData &#x3D; {
+      headerRow: [&#x27;ID&#x27;, &#x27;Merchant&#x27;, &#x27;Bids&#x27;, &#x27;Location&#x27;, &#x27;City&#x27;],
+      dataRows: [
+        [&#x27;GB&#x27;, &#x27;Lagos&#x27;, &#x27;690&#x27;, &#x27;7.87%&#x27;],
+        [&#x27;RO&#x27;, &#x27;Abuja&#x27;, &#x27;600&#x27;, &#x27;5.94%&#x27;],
+        [&#x27;BR&#x27;, &#x27;Anambra&#x27;, &#x27;550&#x27;, &#x27;4.34%&#x27;]
+      ]
+    };
+    /* ----------&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;     Daily Sales Chart initialization    &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;---------- */
+
+    const dataDailySalesChart &#x3D; {
+      labels: [&#x27;M&#x27;, &#x27;T&#x27;, &#x27;W&#x27;, &#x27;T&#x27;, &#x27;F&#x27;, &#x27;S&#x27;, &#x27;S&#x27;],
+      series: [
+        [12, 17, 7, 17, 23, 18, 38]
+      ]
+    };
+
+    const optionsDailySalesChart &#x3D; {
+      lineSmooth: Chartist.Interpolation.cardinal({
+        tension: 0
+      }),
+      low: 0,
+      high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+      chartPadding: { top: 0, right: 0, bottom: 0, left: 0 },
+    };
+
+    const dailySalesChart &#x3D; new Chartist.Line(&#x27;#dailySalesChart&#x27;, dataDailySalesChart, optionsDailySalesChart);
+
+    this.startAnimationForLineChart(dailySalesChart);
+    /* ----------&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;     Completed Tasks Chart initialization    &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;---------- */
+
+    const dataCompletedTasksChart &#x3D; {
+      labels: [&#x27;12p&#x27;, &#x27;3p&#x27;, &#x27;6p&#x27;, &#x27;9p&#x27;, &#x27;12p&#x27;, &#x27;3a&#x27;, &#x27;6a&#x27;, &#x27;9a&#x27;],
+      series: [
+        [230, 750, 450, 300, 280, 240, 200, 190]
+      ]
+    };
+
+    const optionsCompletedTasksChart &#x3D; {
+      lineSmooth: Chartist.Interpolation.cardinal({
+        tension: 0
+      }),
+      low: 0,
+      high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better
+      // look
+      chartPadding: { top: 0, right: 0, bottom: 0, left: 0 }
+    };
+
+    const completedTasksChart &#x3D; new Chartist.Line(&#x27;#completedTasksChart&#x27;, dataCompletedTasksChart,
+      optionsCompletedTasksChart);
+
+    this.startAnimationForLineChart(completedTasksChart);
+
+    /* ----------&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;     Emails Subscription Chart initialization    &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;---------- */
+
+    const dataWebsiteViewsChart &#x3D; {
+      labels: [&#x27;J&#x27;, &#x27;F&#x27;, &#x27;M&#x27;, &#x27;A&#x27;, &#x27;M&#x27;, &#x27;J&#x27;, &#x27;J&#x27;, &#x27;A&#x27;, &#x27;S&#x27;, &#x27;O&#x27;, &#x27;N&#x27;, &#x27;D&#x27;],
+      series: [
+        [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+
+      ]
+    };
+    const optionsWebsiteViewsChart &#x3D; {
+      axisX: {
+        showGrid: false
+      },
+      low: 0,
+      high: 1000,
+      chartPadding: { top: 0, right: 5, bottom: 0, left: 0 }
+    };
+    const responsiveOptions: any &#x3D; [
+      [&#x27;screen and (max-width: 640px)&#x27;, {
+        seriesBarDistance: 5,
+        axisX: {
+          labelInterpolationFnc: function (value) {
+            return value[0];
+          }
+        }
+      }]
+    ];
+    const websiteViewsChart &#x3D; new Chartist.Bar(&#x27;#websiteViewsChart&#x27;, dataWebsiteViewsChart, optionsWebsiteViewsChart, responsiveOptions);
+
+    this.startAnimationForBarChart(websiteViewsChart);
+
+    $(&#x27;#worldMap&#x27;).vectorMap({
+      map: &#x27;world_en&#x27;,
+      backgroundColor: &#x27;transparent&#x27;,
+      borderColor: &#x27;#818181&#x27;,
+      borderOpacity: 0.25,
+      borderWidth: 1,
+      color: &#x27;#b3b3b3&#x27;,
+      enableZoom: true,
+      hoverColor: &#x27;#eee&#x27;,
+      hoverOpacity: null,
+      normalizeFunction: &#x27;linear&#x27;,
+      scaleColors: [&#x27;#b6d6ff&#x27;, &#x27;#005ace&#x27;],
+      selectedColor: &#x27;#c9dfaf&#x27;,
+      selectedRegions: null,
+      showTooltip: true,
+      onRegionClick: function (element, code, region) {
+        var message &#x3D; &#x27;You clicked &quot;&#x27;
+          + region
+          + &#x27;&quot; which has the code: &#x27;
+          + code.toUpperCase();
+
+        alert(message);
+      }
+    });
+  }
+  ngAfterViewInit() {
+    const breakCards &#x3D; true;
+    if (breakCards &#x3D;&#x3D;&#x3D; true) {
+      // We break the cards headers if there is too much stress on them :-)
+      $(&#x27;[data-header-animation&#x3D;&quot;true&quot;]&#x27;).each(function () {
+        const $fix_button &#x3D; $(this);
+        const $card &#x3D; $(this).parent(&#x27;.card&#x27;);
+        $card.find(&#x27;.fix-broken-card&#x27;).click(function () {
+          const $header &#x3D; $(this).parent().parent().siblings(&#x27;.card-header, .card-image&#x27;);
+          $header.removeClass(&#x27;hinge&#x27;).addClass(&#x27;fadeInDown&#x27;);
+
+          $card.attr(&#x27;data-count&#x27;, 0);
+
+          setTimeout(function () {
+            $header.removeClass(&#x27;fadeInDown animate&#x27;);
+          }, 480);
+        });
+
+        $card.mouseenter(function () {
+          const $this &#x3D; $(this);
+          const hover_count &#x3D; parseInt($this.attr(&#x27;data-count&#x27;), 10) + 1 || 0;
+          $this.attr(&#x27;data-count&#x27;, hover_count);
+          if (hover_count &gt;&#x3D; 20) {
+            $(this).children(&#x27;.card-header, .card-image&#x27;).addClass(&#x27;hinge animated&#x27;);
+          }
+        });
+      });
+    }
+    this.getCurrentUser()
+    this.getBids()
+    this.getMerchants()
+    this.getOthers()
+  }
+
+  bids: Bids[] &#x3D; []
+  total_bids &#x3D; 0
+  pending_bids &#x3D; 0
+  progress_bids &#x3D; 0
+  completed_bids &#x3D; 0
+  total_likes &#x3D; 0
+  total_dislikes &#x3D; 0
+
+  merchants:Merchants[] &#x3D; []
+  total_merchants &#x3D; 0
+  active_merchants &#x3D; 0
+  inactive_merchants &#x3D; 0
+
+  total_customers &#x3D; 0
+  total_products &#x3D; 0
+  total_sub &#x3D; 0
+  total_bidrates &#x3D; 0
+
+  getCurrentUser() {
+    const email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+    firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;users&#x27;).doc(email).get().then(u &#x3D;&gt; {
+      const user &#x3D; &lt;AdminUsers&gt;u.data()
+      if (user.role &#x3D;&#x3D; &#x27;Merchant&#x27;) {
+        this.isMerchantAccount &#x3D; true
+      }
+      this.business_owner &#x3D; user.business_owner
+    })
+  }
+
+  getBids() {
+    if (this.isMerchantAccount) {
+      firebase.firestore().collection(&#x27;bids&#x27;).where(&#x27;merchant_id&#x27;, &#x27;&#x3D;&#x3D;&#x27;, this.business_owner).onSnapshot(query &#x3D;&gt; {
+        this.bids &#x3D; []
+        this.total_bids &#x3D; 0
+        this.pending_bids &#x3D; 0
+        this.progress_bids &#x3D; 0
+        this.completed_bids &#x3D; 0
+        this.total_likes &#x3D; 0
+        this.total_dislikes &#x3D; 0
+        query.forEach(async data &#x3D;&gt; {
+          const bid &#x3D; &lt;Bids&gt;data.data()
+          this.bids.push(bid)
+        })
+        this.total_bids &#x3D; this.bids.length
+        const pending &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+          return b.bid_status &#x3D;&#x3D; &#x27;pending&#x27;
+        })
+        const progress &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+          return b.bid_status &#x3D;&#x3D; &#x27;progress&#x27;
+        })
+        const comp &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+          return b.bid_status &#x3D;&#x3D; &#x27;completed&#x27;
+        })
+        const action_like &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+          return b.bid_swipe_action &#x3D;&#x3D; &#x27;like&#x27;
+        })
+        const action_dislike &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+          return b.bid_swipe_action &#x3D;&#x3D; &#x27;dislike&#x27;
+        })
+        this.pending_bids &#x3D; pending.length
+        this.progress_bids &#x3D; progress.length
+        this.completed_bids &#x3D; comp.length
+        this.total_likes &#x3D; action_like.length
+        this.total_dislikes &#x3D; action_dislike.length
+      })
+      return
+    }
+    firebase.firestore().collection(&#x27;bids&#x27;).onSnapshot(query &#x3D;&gt; {
+      this.bids &#x3D; []
+      this.total_bids &#x3D; 0
+      this.pending_bids &#x3D; 0
+      this.progress_bids &#x3D; 0
+      this.completed_bids &#x3D; 0
+      this.total_likes &#x3D; 0
+      this.total_dislikes &#x3D; 0
+      query.forEach(async data &#x3D;&gt; {
+        const bid &#x3D; &lt;Bids&gt;data.data()
+        this.bids.push(bid)
+      })
+      this.total_bids &#x3D; this.bids.length
+      const pending &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+        return b.bid_status &#x3D;&#x3D; &#x27;pending&#x27;
+      })
+      const progress &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+        return b.bid_status &#x3D;&#x3D; &#x27;progress&#x27;
+      })
+      const comp &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+        return b.bid_status &#x3D;&#x3D; &#x27;completed&#x27;
+      })
+      const action_like &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+        return b.bid_swipe_action &#x3D;&#x3D; &#x27;like&#x27;
+      })
+      const action_dislike &#x3D; this.bids.filter((b, index, array) &#x3D;&gt; {
+        return b.bid_swipe_action &#x3D;&#x3D; &#x27;dislike&#x27;
+      })
+      this.pending_bids &#x3D; pending.length
+      this.progress_bids &#x3D; progress.length
+      this.completed_bids &#x3D; comp.length
+      this.total_likes &#x3D; action_like.length
+      this.total_dislikes &#x3D; action_dislike.length
+    })
+  }
+
+  getMerchants(){
+    firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;merchants&#x27;).onSnapshot(query &#x3D;&gt; {
+      this.merchants &#x3D; []
+      this.total_merchants &#x3D; 0
+      this.active_merchants &#x3D; 0
+      this.inactive_merchants &#x3D; 0
+      query.forEach(async data &#x3D;&gt; {
+        const mer &#x3D; &lt;Merchants&gt;data.data()
+        this.merchants.push(mer)
+      })
+      this.total_merchants &#x3D; this.merchants.length
+      const activeM &#x3D; this.merchants.filter((b, index, array) &#x3D;&gt; {
+        return b.status &#x3D;&#x3D; &#x27;active&#x27;
+      })
+      const inAM &#x3D; this.merchants.filter((b, index, array) &#x3D;&gt; {
+        return b.status &#x3D;&#x3D; &#x27;in-active&#x27;
+      })
+      this.active_merchants &#x3D; activeM.length
+      this.inactive_merchants &#x3D; inAM.length
+    })
+  }
+
+  getOthers() {
+    //for customers
+    firebase.firestore().collection(&#x27;customers&#x27;).onSnapshot(query &#x3D;&gt; {
+      this.total_customers &#x3D; query.size
+    })
+    //for products
+    firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;products&#x27;).onSnapshot(query &#x3D;&gt; {
+      this.total_products &#x3D; query.size
+    })
+    //for subscriptions
+    firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;plans&#x27;).onSnapshot(query &#x3D;&gt; {
+      this.total_sub &#x3D; query.size
+    })
+    //for bidrates
+    firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;bidrate&#x27;).onSnapshot(query &#x3D;&gt; {
+      this.total_bidrates &#x3D; query.size
+    })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;main-content&quot;&gt;
+  &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;div class&#x3D;&quot;card&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-success card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;assignment&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Bids Sales by Locations&lt;/h4&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;app-md-table [data]&#x3D;&quot;tableData&quot;&gt;
+                &lt;/app-md-table&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-6 ml-auto mr-auto&quot;&gt;
+                &lt;div id&#x3D;&quot;worldMap&quot; class&#x3D;&quot;map&quot;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-chart&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-rose&quot; data-header-animation&#x3D;&quot;true&quot;&gt;
+            &lt;div class&#x3D;&quot;ct-chart&quot; id&#x3D;&quot;websiteViewsChart&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;card-actions&quot;&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link fix-broken-card&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;build&lt;/i&gt; Fix Header!
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info btn-link&quot; matTooltip&#x3D;&quot;Refresh&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;refresh&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-link&quot; matTooltip&#x3D;&quot;Change Date&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Weekly&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Last Campaign Performance&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;access_time&lt;/i&gt; campaign sent 2 days ago
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-chart&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-success&quot; data-header-animation&#x3D;&quot;true&quot;&gt;
+            &lt;div class&#x3D;&quot;ct-chart&quot; id&#x3D;&quot;dailySalesChart&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;card-actions&quot;&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link fix-broken-card&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;build&lt;/i&gt; Fix Header!
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info btn-link&quot; matTooltip&#x3D;&quot;Refresh&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;refresh&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-link&quot; matTooltip&#x3D;&quot;Change Date&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Daily Sales&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;
+              &lt;span class&#x3D;&quot;text-success&quot;&gt;&lt;i class&#x3D;&quot;fa fa-long-arrow-up&quot;&gt;&lt;/i&gt; 55% &lt;/span&gt; increase in today sales.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;access_time&lt;/i&gt; updated 4 minutes ago
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-chart&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-info&quot; data-header-animation&#x3D;&quot;true&quot;&gt;
+            &lt;div class&#x3D;&quot;ct-chart&quot; id&#x3D;&quot;completedTasksChart&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;card-actions&quot;&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link fix-broken-card&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;build&lt;/i&gt; Fix Header!
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info btn-link&quot; matTooltip&#x3D;&quot;Refresh&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;refresh&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-link&quot; matTooltip&#x3D;&quot;Change Date&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Completed Tasks&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Last Campaign Performance&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;access_time&lt;/i&gt; campaign sent 2 days ago
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Bids Analytics&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-warning card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Bids&lt;/p&gt;
+            &lt;a href&#x3D;&quot;javascript:void(0)&quot; [routerLink]&#x3D;&quot;[&#x27;/bids/all&#x27;]&quot;&gt;&lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_bids}}&lt;/h3&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons text-danger&quot;&gt;warning&lt;/i&gt;
+                &lt;a href&#x3D;&quot;#pablo&quot;&gt;Get More Space...&lt;/a&gt; --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-rose card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Pending Bids&lt;/p&gt;
+            &lt;a href&#x3D;&quot;javascript:void(0)&quot; [routerLink]&#x3D;&quot;[&#x27;/bids/pending&#x27;]&quot;&gt;&lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{pending_bids}}&lt;/h3&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;local_offer&lt;/i&gt; Tracked from Google Analytics --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-success card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Progressing Bids&lt;/p&gt;
+            &lt;a href&#x3D;&quot;javascript:void(0)&quot; [routerLink]&#x3D;&quot;[&#x27;/bids/progress&#x27;]&quot;&gt;&lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{progress_bids}}&lt;/h3&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;date_range&lt;/i&gt; Last 24 Hours --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-info card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Completed Bids&lt;/p&gt;
+            &lt;a href&#x3D;&quot;javascript:void(0)&quot; [routerLink]&#x3D;&quot;[&#x27;/bids/completed&#x27;]&quot;&gt;&lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{completed_bids}}&lt;/h3&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;update&lt;/i&gt; Just Updated --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h3 *ngIf&#x3D;&quot;!isMerchantAccount&quot;&gt;Bid Swipes Analytics&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;!isMerchantAccount&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-6 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-warning card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Likes&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_likes}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons text-danger&quot;&gt;warning&lt;/i&gt;
+                &lt;a href&#x3D;&quot;#pablo&quot;&gt;Get More Space...&lt;/a&gt; --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-6 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-rose card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total DisLikes&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_dislikes}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;local_offer&lt;/i&gt; Tracked from Google Analytics --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h3 *ngIf&#x3D;&quot;!isMerchantAccount&quot;&gt;Merchants Analytics&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;!isMerchantAccount&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-4 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-warning card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Merchants&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_merchants}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons text-danger&quot;&gt;warning&lt;/i&gt;
+                &lt;a href&#x3D;&quot;#pablo&quot;&gt;Get More Space...&lt;/a&gt; --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-4 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-rose card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Active Merchants&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{active_merchants}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;local_offer&lt;/i&gt; Tracked from Google Analytics --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-4 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-success card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;In-Active Merchants&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{inactive_merchants}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;date_range&lt;/i&gt; Last 24 Hours --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h3 *ngIf&#x3D;&quot;!isMerchantAccount&quot;&gt;Other Analytics&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;!isMerchantAccount&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-warning card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Customers&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_customers}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons text-danger&quot;&gt;warning&lt;/i&gt;
+                &lt;a href&#x3D;&quot;#pablo&quot;&gt;Get More Space...&lt;/a&gt; --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-rose card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Products&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_products}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;local_offer&lt;/i&gt; Tracked from Google Analytics --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-success card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Subscriptions&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_sub}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;date_range&lt;/i&gt; Last 24 Hours --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-3 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-stats&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-success card-header-icon&quot;&gt;
+            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+              &lt;i class&#x3D;&quot;material-icons&quot;&gt;equalizer&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;card-category&quot;&gt;Total Bid Rates&lt;/p&gt;
+            &lt;h3 class&#x3D;&quot;card-title&quot;&gt;{{total_bidrates}}&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;!-- &lt;i class&#x3D;&quot;material-icons&quot;&gt;date_range&lt;/i&gt; Last 24 Hours --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- &lt;h3&gt;Manage Listings&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-product&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-image&quot; data-header-animation&#x3D;&quot;true&quot;&gt;
+            &lt;a href&#x3D;&quot;#pablo&quot;&gt;
+              &lt;img class&#x3D;&quot;img&quot; src&#x3D;&quot;./assets/img/card-2.jpg&quot;&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;card-actions text-center&quot;&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link fix-broken-card&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;build&lt;/i&gt; Fix Header!
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-link&quot; matTooltip&#x3D;&quot;View&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;art_track&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success btn-link&quot; matTooltip&#x3D;&quot;Edit&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link&quot; matTooltip&#x3D;&quot;Remove&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;
+              &lt;a href&#x3D;&quot;#pablo&quot;&gt;Cozy 5 Stars Apartment&lt;/a&gt;
+            &lt;/h4&gt;
+            &lt;div class&#x3D;&quot;card-description&quot;&gt;
+              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you
+              can enjoy the main night life in Barcelona.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;price&quot;&gt;
+              &lt;h4&gt;$899/night&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;p class&#x3D;&quot;card-category&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;place&lt;/i&gt; Barcelona, Spain&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-product&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-image&quot; data-header-animation&#x3D;&quot;true&quot;&gt;
+            &lt;a href&#x3D;&quot;#pablo&quot;&gt;
+              &lt;img class&#x3D;&quot;img&quot; src&#x3D;&quot;./assets/img/card-3.jpg&quot;&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;card-actions text-center&quot;&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link fix-broken-card&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;build&lt;/i&gt; Fix Header!
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-link&quot; matTooltip&#x3D;&quot;View&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;art_track&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success btn-link&quot; matTooltip&#x3D;&quot;Edit&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link&quot; matTooltip&#x3D;&quot;Remove&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;
+              &lt;a href&#x3D;&quot;#pablo&quot;&gt;Office Studio&lt;/a&gt;
+            &lt;/h4&gt;
+            &lt;div class&#x3D;&quot;card-description&quot;&gt;
+              The place is close to Metro Station and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can
+              enjoy the night life in London, UK.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;price&quot;&gt;
+              &lt;h4&gt;$1.119/night&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;p class&#x3D;&quot;card-category&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;place&lt;/i&gt; London, UK&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-product&quot;&gt;
+          &lt;div class&#x3D;&quot;card-header card-header-image&quot; data-header-animation&#x3D;&quot;true&quot;&gt;
+            &lt;a href&#x3D;&quot;#pablo&quot;&gt;
+              &lt;img class&#x3D;&quot;img&quot; src&#x3D;&quot;./assets/img/card-1.jpg&quot;&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;div class&#x3D;&quot;card-actions text-center&quot;&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link fix-broken-card&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;build&lt;/i&gt; Fix Header!
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-link&quot; matTooltip&#x3D;&quot;View&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;art_track&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success btn-link&quot; matTooltip&#x3D;&quot;Edit&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-link&quot; matTooltip&#x3D;&quot;Remove&quot;
+                [matTooltipPosition]&#x3D;&quot;&#x27;below&#x27;&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;
+              &lt;a href&#x3D;&quot;#pablo&quot;&gt;Beautiful Castle&lt;/a&gt;
+            &lt;/h4&gt;
+            &lt;div class&#x3D;&quot;card-description&quot;&gt;
+              The place is close to Metro Station and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can
+              enjoy the main night life in Milan.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+            &lt;div class&#x3D;&quot;price&quot;&gt;
+              &lt;h4&gt;$459/night&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;stats&quot;&gt;
+              &lt;p class&#x3D;&quot;card-category&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;place&lt;/i&gt; Milan, Italy&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="main-content">  <div class="container-fluid">    <div class="row">      <div class="col-md-12">        <div class="card">          <div class="card-header card-header-success card-header-icon">            <div class="card-icon">              <i class="material-icons"assignment></i>            </div>            <h4 class="card-title">Bids Sales by Locations</h4>          </div>          <div class="card-body">            <div class="row">              <div class="col-md-6">                <app-md-table [data]="tableData">                </app-md-table>              </div>              <div class="col-md-6 ml-auto mr-auto">                <div id="worldMap" class="map"></div>              </div>            </div>          </div>        </div>      </div>    </div>    <div class="row">      <div class="col-md-4">        <div class="card card-chart">          <div class="card-header card-header-rose" data-header-animation="true">            <div class="ct-chart" id="websiteViewsChart"></div>          </div>          <div class="card-body">            <div class="card-actions">              <button mat-raised-button type="button" class="btn btn-danger btn-link fix-broken-card">                <i class="material-icons">build</i> Fix Header!              </button>              <button mat-raised-button type="button" class="btn btn-info btn-link" matTooltip="Refresh"                [matTooltipPosition]="\'below\'">                <i class="material-icons">refresh</i>              </button>              <button mat-raised-button type="button" class="btn btn-default btn-link" matTooltip="Change Date"                [matTooltipPosition]="\'below\'">                <i class="material-icons">edit</i>              </button>            </div>            <h4 class="card-title">Weekly</h4>            <p class="card-category">Last Campaign Performance</p>          </div>          <div class="card-footer">            <div class="stats">              <i class="material-icons">access_time</i> campaign sent 2 days ago            </div>          </div>        </div>      </div>      <div class="col-md-4">        <div class="card card-chart">          <div class="card-header card-header-success" data-header-animation="true">            <div class="ct-chart" id="dailySalesChart"></div>          </div>          <div class="card-body">            <div class="card-actions">              <button mat-raised-button type="button" class="btn btn-danger btn-link fix-broken-card">                <i class="material-icons">build</i> Fix Header!              </button>              <button mat-raised-button type="button" class="btn btn-info btn-link" matTooltip="Refresh"                [matTooltipPosition]="\'below\'">                <i class="material-icons">refresh</i>              </button>              <button mat-raised-button type="button" class="btn btn-default btn-link" matTooltip="Change Date"                [matTooltipPosition]="\'below\'">                <i class="material-icons">edit</i>              </button>            </div>            <h4 class="card-title">Daily Sales</h4>            <p class="card-category">              <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>          </div>          <div class="card-footer">            <div class="stats">              <i class="material-icons">access_time</i> updated 4 minutes ago            </div>          </div>        </div>      </div>      <div class="col-md-4">        <div class="card card-chart">          <div class="card-header card-header-info" data-header-animation="true">            <div class="ct-chart" id="completedTasksChart"></div>          </div>          <div class="card-body">            <div class="card-actions">              <button mat-raised-button type="button" class="btn btn-danger btn-link fix-broken-card">                <i class="material-icons">build</i> Fix Header!              </button>              <button mat-raised-button type="button" class="btn btn-info btn-link" matTooltip="Refresh"                [matTooltipPosition]="\'below\'">                <i class="material-icons">refresh</i>              </button>              <button mat-raised-button type="button" class="btn btn-default btn-link" matTooltip="Change Date"                [matTooltipPosition]="\'below\'">                <i class="material-icons">edit</i>              </button>            </div>            <h4 class="card-title">Completed Tasks</h4>            <p class="card-category">Last Campaign Performance</p>          </div>          <div class="card-footer">            <div class="stats">              <i class="material-icons">access_time</i> campaign sent 2 days ago            </div>          </div>        </div>      </div>    </div>    <h3>Bids Analytics</h3>    <br>    <div class="row">      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-warning card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Bids</p>            <a href="javascript:void(0)" [routerLink]="[\'/bids/all\']"><h3 class="card-title">{{total_bids}}</h3></a>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons text-danger">warning</i>                <a href="#pablo">Get More Space...</a> -->            </div>          </div>        </div>      </div>      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-rose card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Pending Bids</p>            <a href="javascript:void(0)" [routerLink]="[\'/bids/pending\']"><h3 class="card-title">{{pending_bids}}</h3></a>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">local_offer</i> Tracked from Google Analytics -->            </div>          </div>        </div>      </div>      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-success card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Progressing Bids</p>            <a href="javascript:void(0)" [routerLink]="[\'/bids/progress\']"><h3 class="card-title">{{progress_bids}}</h3></a>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">date_range</i> Last 24 Hours -->            </div>          </div>        </div>      </div>      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-info card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Completed Bids</p>            <a href="javascript:void(0)" [routerLink]="[\'/bids/completed\']"><h3 class="card-title">{{completed_bids}}</h3></a>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">update</i> Just Updated -->            </div>          </div>        </div>      </div>    </div>    <h3 *ngIf="!isMerchantAccount">Bid Swipes Analytics</h3>    <br>    <div class="row" *ngIf="!isMerchantAccount">      <div class="col-lg-6 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-warning card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Likes</p>            <h3 class="card-title">{{total_likes}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons text-danger">warning</i>                <a href="#pablo">Get More Space...</a> -->            </div>          </div>        </div>      </div>      <div class="col-lg-6 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-rose card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total DisLikes</p>            <h3 class="card-title">{{total_dislikes}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">local_offer</i> Tracked from Google Analytics -->            </div>          </div>        </div>      </div>    </div>    <h3 *ngIf="!isMerchantAccount">Merchants Analytics</h3>    <br>    <div class="row" *ngIf="!isMerchantAccount">      <div class="col-lg-4 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-warning card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Merchants</p>            <h3 class="card-title">{{total_merchants}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons text-danger">warning</i>                <a href="#pablo">Get More Space...</a> -->            </div>          </div>        </div>      </div>      <div class="col-lg-4 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-rose card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Active Merchants</p>            <h3 class="card-title">{{active_merchants}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">local_offer</i> Tracked from Google Analytics -->            </div>          </div>        </div>      </div>      <div class="col-lg-4 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-success card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">In-Active Merchants</p>            <h3 class="card-title">{{inactive_merchants}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">date_range</i> Last 24 Hours -->            </div>          </div>        </div>      </div>    </div>    <h3 *ngIf="!isMerchantAccount">Other Analytics</h3>    <br>    <div class="row" *ngIf="!isMerchantAccount">      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-warning card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Customers</p>            <h3 class="card-title">{{total_customers}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons text-danger">warning</i>                <a href="#pablo">Get More Space...</a> -->            </div>          </div>        </div>      </div>      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-rose card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Products</p>            <h3 class="card-title">{{total_products}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">local_offer</i> Tracked from Google Analytics -->            </div>          </div>        </div>      </div>      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-success card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Subscriptions</p>            <h3 class="card-title">{{total_sub}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">date_range</i> Last 24 Hours -->            </div>          </div>        </div>      </div>      <div class="col-lg-3 col-md-6 col-sm-6">        <div class="card card-stats">          <div class="card-header card-header-success card-header-icon">            <div class="card-icon">              <i class="material-icons">equalizer</i>            </div>            <p class="card-category">Total Bid Rates</p>            <h3 class="card-title">{{total_bidrates}}</h3>          </div>          <div class="card-footer">            <div class="stats">              <!-- <i class="material-icons">date_range</i> Last 24 Hours -->            </div>          </div>        </div>      </div>    </div>    <!-- <h3>Manage Listings</h3>    <br>    <div class="row">      <div class="col-md-4">        <div class="card card-product">          <div class="card-header card-header-image" data-header-animation="true">            <a href="#pablo">              <img class="img" src="./assets/img/card-2.jpg">            </a>          </div>          <div class="card-body">            <div class="card-actions text-center">              <button mat-raised-button type="button" class="btn btn-danger btn-link fix-broken-card">                <i class="material-icons">build</i> Fix Header!              </button>              <button mat-raised-button type="button" class="btn btn-default btn-link" matTooltip="View"                [matTooltipPosition]="\'below\'">                <i class="material-icons">art_track</i>              </button>              <button mat-raised-button type="button" class="btn btn-success btn-link" matTooltip="Edit"                [matTooltipPosition]="\'below\'">                <i class="material-icons">edit</i>              </button>              <button mat-raised-button type="button" class="btn btn-danger btn-link" matTooltip="Remove"                [matTooltipPosition]="\'below\'">                <i class="material-icons">close</i>              </button>            </div>            <h4 class="card-title">              <a href="#pablo">Cozy 5 Stars Apartment</a>            </h4>            <div class="card-description">              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you              can enjoy the main night life in Barcelona.            </div>          </div>          <div class="card-footer">            <div class="price">              <h4>$899/night</h4>            </div>            <div class="stats">              <p class="card-category"><i class="material-icons">place</i> Barcelona, Spain</p>            </div>          </div>        </div>      </div>      <div class="col-md-4">        <div class="card card-product">          <div class="card-header card-header-image" data-header-animation="true">            <a href="#pablo">              <img class="img" src="./assets/img/card-3.jpg">            </a>          </div>          <div class="card-body">            <div class="card-actions text-center">              <button mat-raised-button type="button" class="btn btn-danger btn-link fix-broken-card">                <i class="material-icons">build</i> Fix Header!              </button>              <button mat-raised-button type="button" class="btn btn-default btn-link" matTooltip="View"                [matTooltipPosition]="\'below\'">                <i class="material-icons">art_track</i>              </button>              <button mat-raised-button type="button" class="btn btn-success btn-link" matTooltip="Edit"                [matTooltipPosition]="\'below\'">                <i class="material-icons">edit</i>              </button>              <button mat-raised-button type="button" class="btn btn-danger btn-link" matTooltip="Remove"                [matTooltipPosition]="\'below\'">                <i class="material-icons">close</i>              </button>            </div>            <h4 class="card-title">              <a href="#pablo">Office Studio</a>            </h4>            <div class="card-description">              The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can              enjoy the night life in London, UK.            </div>          </div>          <div class="card-footer">            <div class="price">              <h4>$1.119/night</h4>            </div>            <div class="stats">              <p class="card-category"><i class="material-icons">place</i> London, UK</p>            </div>          </div>        </div>      </div>      <div class="col-md-4">        <div class="card card-product">          <div class="card-header card-header-image" data-header-animation="true">            <a href="#pablo">              <img class="img" src="./assets/img/card-1.jpg">            </a>          </div>          <div class="card-body">            <div class="card-actions text-center">              <button mat-raised-button type="button" class="btn btn-danger btn-link fix-broken-card">                <i class="material-icons">build</i> Fix Header!              </button>              <button mat-raised-button type="button" class="btn btn-default btn-link" matTooltip="View"                [matTooltipPosition]="\'below\'">                <i class="material-icons">art_track</i>              </button>              <button mat-raised-button type="button" class="btn btn-success btn-link" matTooltip="Edit"                [matTooltipPosition]="\'below\'">                <i class="material-icons">edit</i>              </button>              <button mat-raised-button type="button" class="btn btn-danger btn-link" matTooltip="Remove"                [matTooltipPosition]="\'below\'">                <i class="material-icons">close</i>              </button>            </div>            <h4 class="card-title">              <a href="#pablo">Beautiful Castle</a>            </h4>            <div class="card-description">              The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can              enjoy the main night life in Milan.            </div>          </div>          <div class="card-footer">            <div class="price">              <h4>$459/night</h4>            </div>            <div class="stats">              <p class="card-category"><i class="material-icons">place</i> Milan, Italy</p>            </div>          </div>        </div>      </div>    </div> -->  </div></div></div>'
+    var COMPONENTS = [{'name': 'AdminLayoutComponent', 'selector': 'app-layout'},{'name': 'AppComponent', 'selector': 'app-my-app'},{'name': 'AuthLayoutComponent', 'selector': 'app-layout'},{'name': 'BidRateComponent', 'selector': 'app-bidrate-cmp'},{'name': 'BidsComponent', 'selector': 'app-bids'},{'name': 'CategoryComponent', 'selector': 'app-category-cmp'},{'name': 'CustomersComponent', 'selector': 'app-customers-cmp'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ExtendedFormsComponent', 'selector': 'app-extendedforms-cmp'},{'name': 'FieldErrorDisplayComponent', 'selector': 'app-field-error-display'},{'name': 'FixedpluginComponent', 'selector': 'app-fixedplugin'},{'name': 'FooterComponent', 'selector': 'app-footer-cmp'},{'name': 'GeneralComponent', 'selector': 'app-general-cmp'},{'name': 'LockComponent', 'selector': 'app-lock-cmp'},{'name': 'LoginComponent', 'selector': 'app-login-cmp'},{'name': 'LogsComponent', 'selector': 'app-logs-cmp'},{'name': 'MerchantsComponent', 'selector': 'app-merchants-cmp'},{'name': 'MessageTemplatesComponent', 'selector': 'app-message-templates-cmp'},{'name': 'NavbarComponent', 'selector': 'app-navbar-cmp'},{'name': 'PaymentComponent', 'selector': 'app-payment-cmp'},{'name': 'PlansComponent', 'selector': 'app-plans-cmp'},{'name': 'PricingComponent', 'selector': 'app-pricing-cmp'},{'name': 'ProductsComponent', 'selector': 'app-products-cmp'},{'name': 'ProgressSpinnerComponent', 'selector': 'app-progress-spinner'},{'name': 'ReferralsComponent', 'selector': 'app-referrals-cmp'},{'name': 'RegisterComponent', 'selector': 'app-register-cmp'},{'name': 'RegularFormsComponent', 'selector': 'app-regularforms-cmp'},{'name': 'ReviewsComponent', 'selector': 'app-reviews-cmp'},{'name': 'SalesComponent', 'selector': 'app-sales-cmp'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SidebarComponent', 'selector': 'app-sidebar-cmp'},{'name': 'UserComponent', 'selector': 'app-user-cmp'},{'name': 'ValidationFormsComponent', 'selector': 'app-validationforms-cmp'},{'name': 'WizardComponent', 'selector': 'app-wizard-cmp'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DashboardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DashboardComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

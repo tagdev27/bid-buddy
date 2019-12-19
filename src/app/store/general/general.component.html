@@ -1,0 +1,52 @@
+<div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-header card-header-danger card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">mail_outline</i>
+                            </div>
+                            <h4 class="card-title">General Settings</h4>
+                        </div>
+                        <div class="card-body ">
+                            <form method="#" action="#">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Minimum Subscription For Customers*" type="number" name="min_sub" [(ngModel)]="min_sub">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Unlimited Fixed Price*" type="number" name="unlimited" [(ngModel)]="unlimited">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Delivery Policy Price*" type="number" name="delivery" [(ngModel)]="delivery">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Bid Value*" type="number" name="bidvalue" [(ngModel)]="bidvalue">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Commission in percent*" type="number" name="commission" [(ngModel)]="commission">
+                                </mat-form-field>
+                                <!-- <h4 class="card-title">Social Media Accounts</h4>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Facebook Url" type="url" name="facebook" [(ngModel)]="facebook">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Instagram Url" type="url" name="instagram" [(ngModel)]="instagram">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Twitter Url" type="url" name="twitter" [(ngModel)]="twitter">
+                                </mat-form-field>
+                                <h4 class="card-title">Other Settings</h4>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Alert When Gift Baskets Stock Level is" type="number" name="sl" [(ngModel)]="stock_level">
+                                </mat-form-field> -->
+                            </form>
+                        </div>
+                        <div class="card-footer ">
+                            <button mat-raised-button type="submit" class="btn btn-fill btn-rose" (click)="setAbout()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

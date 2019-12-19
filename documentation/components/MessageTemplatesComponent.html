@@ -1,0 +1,1499 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bid-buddy documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/stripe.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bid-buddy documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MessageTemplatesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/store/message-templates/message-templates.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-message-templates-cmp</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./message-templates.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./message-templates.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#card_category">card_category</a>
+                            </li>
+                            <li>
+                                <a href="#closeResult">closeResult</a>
+                            </li>
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#currentMessage">currentMessage</a>
+                            </li>
+                            <li>
+                                <a href="#data2">data2</a>
+                            </li>
+                            <li>
+                                <a href="#isAddEdit">isAddEdit</a>
+                            </li>
+                            <li>
+                                <a href="#isAdding">isAdding</a>
+                            </li>
+                            <li>
+                                <a href="#isMessageAddEdit">isMessageAddEdit</a>
+                            </li>
+                            <li>
+                                <a href="#mCategory">mCategory</a>
+                            </li>
+                            <li>
+                                <a href="#messages">messages</a>
+                            </li>
+                            <li>
+                                <a href="#mText">mText</a>
+                            </li>
+                            <li>
+                                <a href="#sTitle">sTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tableData2">tableData2</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addMessage">addMessage</a>
+                            </li>
+                            <li>
+                                <a href="#cancelMessage">cancelMessage</a>
+                            </li>
+                            <li>
+                                <a href="#clearFields">clearFields</a>
+                            </li>
+                            <li>
+                                <a href="#deleteMessage">deleteMessage</a>
+                            </li>
+                            <li>
+                                <a href="#editMessage">editMessage</a>
+                            </li>
+                            <li>
+                                <a href="#getGiftCardMessages">getGiftCardMessages</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#submitMessage">submitMessage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(previewProgressSpinner: <a href="../injectables/OverlayService.html">OverlayService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>previewProgressSpinner</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OverlayService.html" target="_self" >OverlayService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMessage"></a>
+                    <span class="name">
+                        <b>
+                            addMessage
+                        </b>
+                        <a href="#addMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelMessage"></a>
+                    <span class="name">
+                        <b>
+                            cancelMessage
+                        </b>
+                        <a href="#cancelMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancelMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearFields"></a>
+                    <span class="name">
+                        <b>
+                            clearFields
+                        </b>
+                        <a href="#clearFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearFields()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteMessage"></a>
+                    <span class="name">
+                        <b>
+                            deleteMessage
+                        </b>
+                        <a href="#deleteMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteMessage(msg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>msg</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editMessage"></a>
+                    <span class="name">
+                        <b>
+                            editMessage
+                        </b>
+                        <a href="#editMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editMessage(msg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>msg</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGiftCardMessages"></a>
+                    <span class="name">
+                        <b>
+                            getGiftCardMessages
+                        </b>
+                        <a href="#getGiftCardMessages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGiftCardMessages()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitMessage"></a>
+                    <span class="name">
+                        <b>
+                            submitMessage
+                        </b>
+                        <a href="#submitMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="card_category"></a>
+                        <span class="name">
+                            <b>
+                            card_category</b>
+                            <a href="#card_category"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+        { value: &#x27;email&#x27;, viewValue: &#x27;Email&#x27; },
+    { value: &#x27;sms&#x27;, viewValue: &#x27;SMS&#x27; },
+    ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeResult"></a>
+                        <span class="name">
+                            <b>
+                            closeResult</b>
+                            <a href="#closeResult"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new AppConfig()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentMessage"></a>
+                        <span class="name">
+                            <b>
+                            currentMessage</b>
+                            <a href="#currentMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data2"></a>
+                        <span class="name">
+                            <b>
+                            data2</b>
+                            <a href="#data2"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[][]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAddEdit"></a>
+                        <span class="name">
+                            <b>
+                            isAddEdit</b>
+                            <a href="#isAddEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAdding"></a>
+                        <span class="name">
+                            <b>
+                            isAdding</b>
+                            <a href="#isAdding"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isMessageAddEdit"></a>
+                        <span class="name">
+                            <b>
+                            isMessageAddEdit</b>
+                            <a href="#isMessageAddEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mCategory"></a>
+                        <span class="name">
+                            <b>
+                            mCategory</b>
+                            <a href="#mCategory"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="messages"></a>
+                        <span class="name">
+                            <b>
+                            messages</b>
+                            <a href="#messages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Messages.html" target="_self" >Messages[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mText"></a>
+                        <span class="name">
+                            <b>
+                            mText</b>
+                            <a href="#mText"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sTitle"></a>
+                        <span class="name">
+                            <b>
+                            sTitle</b>
+                            <a href="#sTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableData2"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            tableData2</b>
+                            <a href="#tableData2"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TableData.html" target="_self" >TableData</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/store/message-templates/message-templates.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &quot;@angular/core&quot;;
+import { Currency } from &quot;../../models/currency&quot;;
+import { AppConfig } from &quot;../../services/global.service&quot;;
+import * as firebase from &quot;firebase&quot;
+import swal from &quot;sweetalert2&quot;;
+import { OverlayService } from &#x27;../../overlay/overlay.module&#x27;;
+import { ProgressSpinnerComponent } from &#x27;../../progress-spinner/progress-spinner.module&#x27;;
+import { MainCategory } from &quot;src/app/models/main.category&quot;;
+import { SubCategory } from &quot;src/app/models/sub.category&quot;;
+
+declare interface TableData {
+    headerRow: string[];
+    dataRows: string[][];
+}
+
+declare interface Styles {
+    id: string;
+    title: string;
+    image: string;
+}
+
+declare interface Messages {
+    id: string;
+    category: string;
+    text: string;
+}
+
+@Component({
+    selector: &#x27;app-message-templates-cmp&#x27;,
+    templateUrl: &#x27;./message-templates.component.html&#x27;,
+    styleUrls: [&#x27;./message-templates.component.css&#x27;]
+})
+
+export class MessageTemplatesComponent implements OnInit, OnDestroy {
+    public tableData2: TableData;
+
+    messages: Messages[] &#x3D; []
+    config &#x3D; new AppConfig()
+    data2: string[][] &#x3D; [];
+    closeResult &#x3D; &#x27;&#x27;
+
+    isAddEdit &#x3D; false
+    isAdding &#x3D; false
+    sTitle &#x3D; &#x27;&#x27;
+
+    //messages
+    card_category &#x3D; [
+        { value: &#x27;email&#x27;, viewValue: &#x27;Email&#x27; },
+    { value: &#x27;sms&#x27;, viewValue: &#x27;SMS&#x27; },
+    ]
+    mCategory &#x3D; []
+    mText &#x3D; &#x27;&#x27;
+    isMessageAddEdit &#x3D; false
+    currentMessage: any
+
+    constructor(private previewProgressSpinner: OverlayService) {
+    }
+
+    getGiftCardMessages() {
+        firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;template-messages&#x27;).onSnapshot(query &#x3D;&gt; {
+            this.data2 &#x3D; []
+            this.messages &#x3D; []
+            var index &#x3D; 0
+            query.forEach(data &#x3D;&gt; {
+                const msg &#x3D; &lt;Messages&gt;data.data()
+                this.messages.push(msg)
+                this.data2.push([&#x60;${index + 1}&#x60;, msg.id, msg.category, msg.text, &#x27;btn-link&#x27;])
+                index &#x3D; index + 1
+            })
+            this.tableData2 &#x3D; {
+                headerRow: [&#x27;#&#x27;, &#x27;Template Category&#x27;, &#x27;Template Message&#x27;, &#x27;Actions&#x27;],
+                dataRows: this.data2
+            };
+        });
+    }
+
+    ngOnDestroy() {
+
+    }
+
+    ngOnInit() {
+        this.getGiftCardMessages()
+    }
+
+    addMessage() {
+        this.isMessageAddEdit &#x3D; true
+        this.isAdding &#x3D; true
+    }
+
+    cancelMessage() {
+        this.isMessageAddEdit &#x3D; false
+        this.isAdding &#x3D; false
+        this.clearFields()
+    }
+
+    clearFields() {
+        this.sTitle &#x3D; &#x27;&#x27;
+        this.mText &#x3D; &#x27;&#x27;
+        this.mCategory &#x3D; []
+    }
+
+    editMessage(msg: any) {
+        this.mCategory &#x3D; &#x60;${msg[2]}&#x60;.split(&#x27;,&#x27;)
+        this.mText &#x3D; msg[3]
+        this.isMessageAddEdit &#x3D; true
+        this.currentMessage &#x3D; msg
+        this.isAdding &#x3D; false
+    }
+
+    deleteMessage(msg: any) {
+        const id &#x3D; &#x60;${msg[1]}&#x60;
+        swal({
+            title: &#x27;Delete Alert&#x27;,
+            text: &#x27;Are you sure about deleting this template message?&#x27;,
+            type: &#x27;warning&#x27;,
+            showCancelButton: true,
+            confirmButtonText: &#x27;Yes, delete it!&#x27;,
+            cancelButtonText: &#x27;No, keep it&#x27;,
+            confirmButtonClass: &quot;btn btn-success&quot;,
+            cancelButtonClass: &quot;btn btn-danger&quot;,
+            buttonsStyling: false
+        }).then((result) &#x3D;&gt; {
+            if (result.value) {
+                firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;template-messages&#x27;).doc(id).delete().then(del &#x3D;&gt; {
+                    const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+                    const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+                    this.config.logActivity(&#x60;${current_name}|${current_email} deleted this template message: ${msg[3]}&#x60;)
+                    this.config.displayMessage(&quot;Successfully deleted&quot;, true);
+                }).catch(err &#x3D;&gt; {
+                    this.config.displayMessage(&#x60;${err}&#x60;, false);
+                })
+            } else {
+                swal({
+                    title: &#x27;Cancelled&#x27;,
+                    text: &#x27;Deletion not successful&#x27;,
+                    type: &#x27;error&#x27;,
+                    confirmButtonClass: &quot;btn btn-info&quot;,
+                    buttonsStyling: false
+                }).catch(swal.noop)
+            }
+        })
+    }
+
+    submitMessage() {
+        if (this.mCategory.length &#x3D;&#x3D; 0 || this.mText &#x3D;&#x3D; &#x27;&#x27;) {
+            this.config.displayMessage(&quot;Please enter all fields.&quot;, false)
+            return
+        }
+        if (this.mText.length &gt; 250) {
+            this.config.displayMessage(&quot;Characters should not exceed 250&quot;, false)
+            return
+        }
+        this.previewProgressSpinner.open({ hasBackdrop: true }, ProgressSpinnerComponent);
+        const id &#x3D; (this.isAdding) ? firebase.database().ref().push().key : this.currentMessage[1]
+        const msg: Messages &#x3D; {
+            id: id,
+            category: this.mCategory.join(&#x27;,&#x27;),
+            text: this.mText
+        }
+        if (this.isAdding) {
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;template-messages&#x27;).doc(msg.id).set(msg).then(done &#x3D;&gt; {
+                const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+                const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+                this.config.logActivity(&#x60;${current_name}|${current_email} created a template message&#x60;)
+                this.previewProgressSpinner.close()
+                this.clearFields()
+                this.config.displayMessage(&quot;Template Message saved&quot;, true)
+                this.isMessageAddEdit &#x3D; false
+                this.isAdding &#x3D; false
+            }).catch(err &#x3D;&gt; {
+                this.previewProgressSpinner.close()
+                this.config.displayMessage(&#x60;${err}&#x60;, false)
+            })
+        } else {
+            firebase.firestore().collection(&#x27;db&#x27;).doc(&#x27;bidbuddy&#x27;).collection(&#x27;template-messages&#x27;).doc(msg.id).update(msg).then(done &#x3D;&gt; {
+                const current_email &#x3D; localStorage.getItem(&#x27;email&#x27;)
+                const current_name &#x3D; localStorage.getItem(&#x27;name&#x27;)
+                this.config.logActivity(&#x60;${current_name}|${current_email} created a template message&#x60;)
+                this.previewProgressSpinner.close()
+                this.clearFields()
+                this.config.displayMessage(&quot;Template Message saved&quot;, true)
+                this.isMessageAddEdit &#x3D; false
+                this.isAdding &#x3D; false
+            }).catch(err &#x3D;&gt; {
+                this.previewProgressSpinner.close()
+                this.config.displayMessage(&#x60;${err}&#x60;, false)
+            })
+        }
+    }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;main-content&quot;&gt;
+    &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-lg-12&quot;&gt;
+                &lt;p class&#x3D;&quot;h2&quot;&gt;Template Settings&lt;/p&gt;
+                &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;!isMessageAddEdit&quot;&gt;
+                    &lt;div class&#x3D;&quot;card&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-header card-header-danger card-header-icon&quot;&gt;
+                            &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+                                &lt;i class&#x3D;&quot;material-icons&quot;&gt;assignment&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Template Messages&lt;/h4&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;td-actions text-right&quot;&gt;
+                            &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-round&quot;
+                                (click)&#x3D;&quot;addMessage()&quot; ngbAutofocus&gt;
+                                &lt;i class&#x3D;&quot;material-icons&quot;&gt;add&lt;/i&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                            &lt;div class&#x3D;&quot;table-responsive&quot;&gt;
+                                &lt;table class&#x3D;&quot;table&quot;&gt;
+                                    &lt;thead&gt;
+                                        &lt;tr&gt;
+                                            &lt;th class&#x3D;&quot;text-center&quot;&gt;{{ tableData2.headerRow[0] }}&lt;/th&gt;
+                                            &lt;th&gt;{{ tableData2.headerRow[1] }}&lt;/th&gt;
+                                            &lt;th&gt;{{ tableData2.headerRow[2] }}&lt;/th&gt;
+                                            &lt;th&gt;{{ tableData2.headerRow[3] }}&lt;/th&gt;
+                                            &lt;th class&#x3D;&quot;text-right&quot;&gt;{{ tableData2.headerRow[4] }}&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/thead&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr *ngFor&#x3D;&quot;let row of tableData2.dataRows&quot;&gt;
+                                            &lt;td class&#x3D;&quot;text-center&quot;&gt;{{row[0]}}&lt;/td&gt;
+                                            &lt;td&gt;
+                                                {{row[2]}}
+                                            &lt;/td&gt;
+                                            &lt;td&gt;{{row[3]}}&lt;/td&gt;
+                                            &lt;td class&#x3D;&quot;td-actions text-right&quot;&gt;
+                                                &lt;button mat-raised-button type&#x3D;&quot;button&quot;
+                                                    class&#x3D;&quot;btn btn-success {{row[4]}}&quot; (click)&#x3D;&quot;editMessage(row)&quot;&gt;
+                                                    &lt;i class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/i&gt;
+                                                &lt;/button&gt;
+                                                &lt;button mat-raised-button type&#x3D;&quot;button&quot;
+                                                    class&#x3D;&quot;btn btn-danger {{row[4]}}&quot; (click)&#x3D;&quot;deleteMessage(row)&quot;&gt;
+                                                    &lt;i class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
+                                                &lt;/button&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;isMessageAddEdit&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                        &lt;div class&#x3D;&quot;card text-center&quot;&gt;
+                            &lt;div class&#x3D;&quot;card-header card-header-rose card-header-icon&quot;&gt;
+                                &lt;div class&#x3D;&quot;card-icon&quot;&gt;
+                                    &lt;i class&#x3D;&quot;material-icons&quot;&gt;mail_outline&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Add new template message&lt;/h4&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;card-body text-center&quot;&gt;
+                                &lt;form method&#x3D;&quot;#&quot; action&#x3D;&quot;#&quot;&gt;
+                                    &lt;mat-form-field&gt;
+                                        &lt;mat-select placeholder&#x3D;&quot;Gift Card Message Category&quot; multiple
+                                            [(ngModel)]&#x3D;&quot;mCategory&quot; name&#x3D;&quot;bmc&quot; ariaLabel&#x3D;&quot;card_category[0]&quot;&gt;
+                                            &lt;mat-option *ngFor&#x3D;&quot;let cc of card_category&quot; [value]&#x3D;&quot;cc.value&quot;&gt;
+                                                {{cc.viewValue}}
+                                            &lt;/mat-option&gt;
+                                        &lt;/mat-select&gt;
+                                    &lt;/mat-form-field&gt;
+                                    &lt;!-- &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                                        &lt;input matInput placeholder&#x3D;&quot;Card Message (250 characters max)&quot; type&#x3D;&quot;text&quot;
+                                            name&#x3D;&quot;m1&quot; [(ngModel)]&#x3D;&quot;mText&quot;&gt;
+                                    &lt;/mat-form-field&gt; --&gt;
+                                    &lt;editor apiKey&#x3D;&quot;0lbrial019advtrtco1udm21kyh5gj5lkfwkeqoo92vhw0yc&quot; [init]&#x3D;&quot;{
+                                        selector: &#x27;textarea&#x27;,
+                                        plugins: &#x27;a11ychecker advcode casechange formatpainter linkchecker lists checklist media mediaembed pageembed permanentpen powerpaste tinycomments tinydrive tinymcespellchecker&#x27;,
+                                        toolbar: &#x27;a11ycheck addcomment showcomments casechange checklist code formatpainter insertfile pageembed permanentpen&#x27;,
+                                        toolbar_drawer: &#x27;floating&#x27;,
+                                        tinycomments_mode: &#x27;embedded&#x27;,
+                                        tinycomments_author: &#x27;BidBuddy&#x27;
+                                     }&quot; name&#x3D;&quot;m1&quot; [(ngModel)]&#x3D;&quot;mText&quot;&gt;
+                                    &lt;/editor&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;card-footer &quot;&gt;
+                                &lt;button mat-raised-button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-fill btn-rose&quot;
+                                    (click)&#x3D;&quot;submitMessage()&quot;&gt;Submit&lt;/button&gt;
+                                &lt;button mat-raised-button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-fill btn-danger&quot;
+                                    (click)&#x3D;&quot;cancelMessage()&quot;&gt;Cancel&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./message-templates.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.user .photo {
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    z-index: 5;
+    border-radius: 50%;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="main-content">    <div class="container-fluid">        <div class="row">            <div class="col-lg-12">                <p class="h2">Template Settings</p>                <div class="col-md-12" *ngIf="!isMessageAddEdit">                    <div class="card">                        <div class="card-header card-header-danger card-header-icon">                            <div class="card-icon">                                <i class="material-icons">assignment</i>                            </div>                            <h4 class="card-title">Template Messages</h4>                        </div>                        <div class="td-actions text-right">                            <button mat-raised-button type="button" class="btn btn-danger btn-round"                                (click)="addMessage()" ngbAutofocus>                                <i class="material-icons">add</i>                            </button>                        </div>                        <div class="card-body">                            <div class="table-responsive">                                <table class="table">                                    <thead>                                        <tr>                                            <th class="text-center">{{ tableData2.headerRow[0] }}</th>                                            <th>{{ tableData2.headerRow[1] }}</th>                                            <th>{{ tableData2.headerRow[2] }}</th>                                            <th>{{ tableData2.headerRow[3] }}</th>                                            <th class="text-right">{{ tableData2.headerRow[4] }}</th>                                        </tr>                                    </thead>                                    <tbody>                                        <tr *ngFor="let row of tableData2.dataRows">                                            <td class="text-center">{{row[0]}}</td>                                            <td>                                                {{row[2]}}                                            </td>                                            <td>{{row[3]}}</td>                                            <td class="td-actions text-right">                                                <button mat-raised-button type="button"                                                    class="btn btn-success {{row[4]}}" (click)="editMessage(row)">                                                    <i class="material-icons">edit</i>                                                </button>                                                <button mat-raised-button type="button"                                                    class="btn btn-danger {{row[4]}}" (click)="deleteMessage(row)">                                                    <i class="material-icons">close</i>                                                </button>                                            </td>                                        </tr>                                    </tbody>                                </table>                            </div>                        </div>                    </div>                </div>                <div class="row" *ngIf="isMessageAddEdit">                    <div class="col-md-12">                        <div class="card text-center">                            <div class="card-header card-header-rose card-header-icon">                                <div class="card-icon">                                    <i class="material-icons">mail_outline</i>                                </div>                                <h4 class="card-title">Add new template message</h4>                            </div>                            <div class="card-body text-center">                                <form method="#" action="#">                                    <mat-form-field>                                        <mat-select placeholder="Gift Card Message Category" multiple                                            [(ngModel)]="mCategory" name="bmc" ariaLabel="card_category[0]">                                            <mat-option *ngFor="let cc of card_category" [value]="cc.value">                                                {{cc.viewValue}}                                            </mat-option>                                        </mat-select>                                    </mat-form-field>                                    <!-- <mat-form-field class="example-full-width">                                        <input matInput placeholder="Card Message (250 characters max)" type="text"                                            name="m1" [(ngModel)]="mText">                                    </mat-form-field> -->                                    <editor apiKey="0lbrial019advtrtco1udm21kyh5gj5lkfwkeqoo92vhw0yc" [init]="{                                        selector: \'textarea\',                                        plugins: \'a11ychecker advcode casechange formatpainter linkchecker lists checklist media mediaembed pageembed permanentpen powerpaste tinycomments tinydrive tinymcespellchecker\',                                        toolbar: \'a11ycheck addcomment showcomments casechange checklist code formatpainter insertfile pageembed permanentpen\',                                        toolbar_drawer: \'floating\',                                        tinycomments_mode: \'embedded\',                                        tinycomments_author: \'BidBuddy\'                                     }" name="m1" [(ngModel)]="mText">                                    </editor>                                </form>                            </div>                            <div class="card-footer ">                                <button mat-raised-button type="submit" class="btn btn-fill btn-rose"                                    (click)="submitMessage()">Submit</button>                                <button mat-raised-button type="button" class="btn btn-fill btn-danger"                                    (click)="cancelMessage()">Cancel</button>                            </div>                        </div>                    </div>                </div>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AdminLayoutComponent', 'selector': 'app-layout'},{'name': 'AppComponent', 'selector': 'app-my-app'},{'name': 'AuthLayoutComponent', 'selector': 'app-layout'},{'name': 'BidRateComponent', 'selector': 'app-bidrate-cmp'},{'name': 'BidsComponent', 'selector': 'app-bids'},{'name': 'CategoryComponent', 'selector': 'app-category-cmp'},{'name': 'CustomersComponent', 'selector': 'app-customers-cmp'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ExtendedFormsComponent', 'selector': 'app-extendedforms-cmp'},{'name': 'FieldErrorDisplayComponent', 'selector': 'app-field-error-display'},{'name': 'FixedpluginComponent', 'selector': 'app-fixedplugin'},{'name': 'FooterComponent', 'selector': 'app-footer-cmp'},{'name': 'GeneralComponent', 'selector': 'app-general-cmp'},{'name': 'LockComponent', 'selector': 'app-lock-cmp'},{'name': 'LoginComponent', 'selector': 'app-login-cmp'},{'name': 'LogsComponent', 'selector': 'app-logs-cmp'},{'name': 'MerchantsComponent', 'selector': 'app-merchants-cmp'},{'name': 'MessageTemplatesComponent', 'selector': 'app-message-templates-cmp'},{'name': 'NavbarComponent', 'selector': 'app-navbar-cmp'},{'name': 'PaymentComponent', 'selector': 'app-payment-cmp'},{'name': 'PlansComponent', 'selector': 'app-plans-cmp'},{'name': 'PricingComponent', 'selector': 'app-pricing-cmp'},{'name': 'ProductsComponent', 'selector': 'app-products-cmp'},{'name': 'ProgressSpinnerComponent', 'selector': 'app-progress-spinner'},{'name': 'ReferralsComponent', 'selector': 'app-referrals-cmp'},{'name': 'RegisterComponent', 'selector': 'app-register-cmp'},{'name': 'RegularFormsComponent', 'selector': 'app-regularforms-cmp'},{'name': 'ReviewsComponent', 'selector': 'app-reviews-cmp'},{'name': 'SalesComponent', 'selector': 'app-sales-cmp'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SidebarComponent', 'selector': 'app-sidebar-cmp'},{'name': 'UserComponent', 'selector': 'app-user-cmp'},{'name': 'ValidationFormsComponent', 'selector': 'app-validationforms-cmp'},{'name': 'WizardComponent', 'selector': 'app-wizard-cmp'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MessageTemplatesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MessageTemplatesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
