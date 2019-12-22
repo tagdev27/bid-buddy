@@ -49,7 +49,7 @@ export const AppRoutes: Routes = [
       {
         path: 'logs',
         canActivate: [RouteGuard],
-        loadChildren: './logs/logs.module#LogsModule'
+        loadChildren: './bblogs/logs.module#LogsModule'
       },
       {
         path: 'payment',
