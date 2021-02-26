@@ -134,7 +134,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
   async SubmitClicked() {
     if (
-      this.business_name == '' ||
+      this.business_name == '' || 
       this.phone == '' ||
       this.email == '' ||
       this.isActiveSelectedPlan == '' ||
